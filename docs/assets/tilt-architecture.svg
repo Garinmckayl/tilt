@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 860" width="1440" height="860">
+  <defs>
+    <linearGradient id="specBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#141413"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#C83E2B"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="860" rx="24" fill="#FAF6F0" stroke="#DED5C4" stroke-width="4"/>
+
+  <!-- Header Bar -->
+  <rect x="36" y="32" width="1368" height="88" rx="16" fill="#141413"/>
+  <text x="64" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="900" fill="#FAF6F0">
+    TILT Architecture: Multi-Model Perspective Comparison &amp; #context-memory Selection
+  </text>
+  <text x="64" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#D5CBB8">
+    Amazon Bedrock (3 Model Families) + Persistent Strands Decider 2B (/v1/systemone Batch) + Strands Synthesis Agent
+  </text>
+  <rect x="1082" y="54" width="298" height="40" rx="8" fill="#C83E2B"/>
+  <text x="1100" y="79" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" font-weight="700" fill="#FFFFFF">
+    #strands-decider-2b · #context-memory
+  </text>
+
+  <!-- COLUMN 1: Consumer Question -->
+  <rect x="36" y="152" width="248" height="310" rx="16" fill="#F3ECE0" stroke="#D5CBB8" stroke-width="2"/>
+  <text x="56" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" fill="#C83E2B" letter-spacing="1.2">
+    1. CONSUMER QUESTION
+  </text>
+  <text x="56" y="218" font-family="Georgia, serif" font-size="20" font-weight="800" fill="#141413">
+    Controversial Prompt
+  </text>
+  <rect x="54" y="236" width="212" height="106" rx="10" fill="#FAF6F0" stroke="#D8CEBE"/>
+  <text x="68" y="264" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#141413">
+    “Should schools ban
+  </text>
+  <text x="68" y="284" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#141413">
+    smartphones?”
+  </text>
+  <text x="68" y="310" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    or Nuclear, UBI, Copyright,
+  </text>
+  <text x="68" y="326" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    Immigration, Custom Prompt
+  </text>
+  <rect x="54" y="356" width="212" height="86" rx="10" fill="#FAF6F0" stroke="#D8CEBE"/>
+  <text x="68" y="380" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#141413">
+    Topic Stance Rubric:
+  </text>
+  <text x="68" y="399" font-family="ui-monospace, monospace" font-size="11" fill="#1D4ED8">
+    • Pole A: Opposes a ban
+  </text>
+  <text x="68" y="415" font-family="ui-monospace, monospace" font-size="11" fill="#B45309">
+    • Center: Mixed / Case-by-case
+  </text>
+  <text x="68" y="431" font-family="ui-monospace, monospace" font-size="11" fill="#0F766E">
+    • Pole B: Supports a ban
+  </text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="284" y1="305" x2="326" y2="305" stroke="#141413" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+  <!-- COLUMN 2: Parallel Bedrock Query & Passage Splitter -->
+  <rect x="332" y="152" width="290" height="310" rx="16" fill="#F3ECE0" stroke="#D5CBB8" stroke-width="2"/>
+  <text x="352" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" fill="#C83E2B" letter-spacing="1.2">
+    2. AMAZON BEDROCK (PARALLEL)
+  </text>
+  <text x="352" y="212" font-family="ui-monospace, monospace" font-size="10.5" fill="#5E5A52">
+    Same prompt · temp=0.3 · maxTokens=260
+  </text>
+
+  <!-- 3 Model Boxes -->
+  <rect x="350" y="228" width="254" height="44" rx="8" fill="#FAF6F0" stroke="#D97706" stroke-width="1.5"/>
+  <text x="366" y="255" font-family="Georgia, serif" font-size="15" font-weight="800" fill="#141413">
+    Anthropic Claude Sonnet 4.5
+  </text>
+
+  <rect x="350" y="280" width="254" height="44" rx="8" fill="#FAF6F0" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="366" y="307" font-family="Georgia, serif" font-size="15" font-weight="800" fill="#141413">
+    Meta Llama 3.3 70B Instruct
+  </text>
+
+  <rect x="350" y="332" width="254" height="44" rx="8" fill="#FAF6F0" stroke="#0F766E" stroke-width="1.5"/>
+  <text x="366" y="359" font-family="Georgia, serif" font-size="15" font-weight="800" fill="#141413">
+    DeepSeek V3.2
+  </text>
+
+  <!-- Passage Splitter Box -->
+  <rect x="350" y="388" width="254" height="56" rx="8" fill="#141413"/>
+  <text x="366" y="412" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FAF6F0">
+    Deterministic Passage Splitter
+  </text>
+  <text x="366" y="431" font-family="ui-monospace, monospace" font-size="11" fill="#D5CBB8">
+    [P1] [P2] [P3] [P4] + char offsets
+  </text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="622" y1="305" x2="664" y2="305" stroke="#C83E2B" stroke-width="3" marker-end="url(#arrowRed)"/>
+
+  <!-- COLUMN 3: Strands Decider 2B Service -->
+  <rect x="670" y="152" width="384" height="310" rx="16" fill="#141413" stroke="#C83E2B" stroke-width="3"/>
+  <text x="692" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" fill="#E05A47" letter-spacing="1.2">
+    3. STRANDS DECIDER 2B SERVICE (:8099)
+  </text>
+  <text x="692" y="210" font-family="ui-monospace, monospace" font-size="11" fill="#D5CBB8">
+    POST /v1/systemone · Shared-Prefix KV Cache
+  </text>
+
+  <rect x="690" y="224" width="344" height="48" rx="8" fill="#22201D" stroke="#3B3833"/>
+  <text x="704" y="245" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FAF6F0">
+    A. is_refusal (noul) -&gt; P(refusal) in [0, 1]
+  </text>
+  <text x="704" y="263" font-family="ui-monospace, monospace" font-size="11" fill="#A39E93">
+    If P &gt;= 0.75: isolate in off-spectrum Refusal tray
+  </text>
+
+  <rect x="690" y="280" width="344" height="48" rx="8" fill="#22201D" stroke="#3B3833"/>
+  <text x="704" y="301" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FAF6F0">
+    B. stance (choice) -&gt; Topic Spectrum &amp; Margin
+  </text>
+  <text x="704" y="319" font-family="ui-monospace, monospace" font-size="11" fill="#A39E93">
+    If conf &lt; 0.25 or max_rel &lt; 1.45: output Unclear
+  </text>
+
+  <rect x="690" y="336" width="344" height="52" rx="8" fill="#22201D" stroke="#0F766E" stroke-width="1.5"/>
+  <text x="704" y="357" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#5EEAD4">
+    C. rel_P1..PN (score 0..3) · #context-memory
+  </text>
+  <text x="704" y="376" font-family="ui-monospace, monospace" font-size="11" fill="#D5CBB8">
+    Prunes filler (&lt; 1.50/3.0), saving 34%-39% context
+  </text>
+
+  <rect x="690" y="396" width="344" height="48" rx="8" fill="#22201D" stroke="#3B3833"/>
+  <text x="704" y="417" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#FAF6F0">
+    D. best_passage (choice over P1..PN)
+  </text>
+  <text x="704" y="435" font-family="ui-monospace, monospace" font-size="11" fill="#A39E93">
+    Selects primary supporting passage ID
+  </text>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="1054" y1="305" x2="1096" y2="305" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)"/>
+
+  <!-- COLUMN 4: Strands Synthesis Agent + Verifier -->
+  <rect x="1102" y="152" width="302" height="310" rx="16" fill="#F3ECE0" stroke="#D5CBB8" stroke-width="2"/>
+  <text x="1122" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" fill="#0F766E" letter-spacing="1.2">
+    4. STRANDS AGENT SYNTHESIS
+  </text>
+  <text x="1122" y="212" font-family="Georgia, serif" font-size="18" font-weight="800" fill="#141413">
+    Context-Pruned Explanation
+  </text>
+
+  <rect x="1120" y="228" width="266" height="96" rx="10" fill="#FAF6F0" stroke="#D8CEBE"/>
+  <text x="1134" y="252" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#141413">
+    Input: Selected Passages Only
+  </text>
+  <text x="1134" y="272" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    • ContextMemoryIntervention hook
+  </text>
+  <text x="1134" y="290" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    • 1-sentence framing per model
+  </text>
+  <text x="1134" y="308" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    • 2-sentence “Where they differ”
+  </text>
+
+  <rect x="1120" y="338" width="266" height="104" rx="10" fill="#FAF6F0" stroke="#141413" stroke-width="1.5"/>
+  <text x="1134" y="362" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#C83E2B">
+    Deterministic Quote Verifier
+  </text>
+  <text x="1134" y="382" font-family="ui-monospace, monospace" font-size="11" fill="#141413">
+    verify_exact_quote(orig, quote)
+  </text>
+  <text x="1134" y="402" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    Checks exact character offsets
+  </text>
+  <text x="1134" y="420" font-family="ui-monospace, monospace" font-size="11" fill="#5E5A52">
+    against stored original response
+  </text>
+
+  <!-- BOTTOM PANEL: Consumer Editorial Experience + Reusable Pattern & Evaluation Summary -->
+  <rect x="36" y="496" width="1368" height="328" rx="18" fill="#F3ECE0" stroke="#D5CBB8" stroke-width="2"/>
+  <text x="64" y="534" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#141413" letter-spacing="1.2">
+    5. CONSUMER EDITORIAL FRONT PAGE (NEXT.JS 15)  ·  INSPECTABLE STANCE SPECTRUM &amp; VERIFIED EVIDENCE
+  </text>
+
+  <!-- Visual Spectrum Bar inside bottom panel -->
+  <rect x="64" y="554" width="820" height="150" rx="14" fill="#FAF6F0" stroke="#D8CEBE" stroke-width="1.5"/>
+  <text x="88" y="584" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#1D4ED8">
+    ← Opposes a ban
+  </text>
+  <text x="415" y="584" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#B45309">
+    Mixed / Case-by-case
+  </text>
+  <text x="735" y="584" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#0F766E">
+    Supports a ban →
+  </text>
+
+  <rect x="88" y="604" width="772" height="14" rx="7" fill="url(#specBar)"/>
+  <!-- Model Pins on Spectrum -->
+  <circle cx="425" cy="611" r="13" fill="#D97706" stroke="#FAF6F0" stroke-width="3"/>
+  <text x="380" y="644" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#141413">
+    Claude (46%)
+  </text>
+
+  <circle cx="515" cy="611" r="13" fill="#2563EB" stroke="#FAF6F0" stroke-width="3"/>
+  <text x="480" y="644" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#141413">
+    Llama 3.3 (54%)
+  </text>
+
+  <circle cx="715" cy="611" r="13" fill="#0F766E" stroke="#FAF6F0" stroke-width="3"/>
+  <text x="665" y="644" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#0F766E">
+    DeepSeek V3.2 (72%)
+  </text>
+
+  <text x="88" y="682" font-family="Georgia, serif" font-size="14" fill="#3D3A35">
+    Click any stance badge or spectrum pin to expand the full response and highlight the exact supporting passage [P1..PN].
+  </text>
+
+  <!-- Right side of bottom panel: Measured Engineering & Evaluation Box -->
+  <rect x="910" y="554" width="466" height="244" rx="14" fill="#141413"/>
+  <text x="934" y="586" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#E05A47" letter-spacing="1">
+    MEASURED AWS PERFORMANCE &amp; LABELED TEST SET
+  </text>
+  <text x="934" y="616" font-family="ui-monospace, monospace" font-size="12" fill="#FAF6F0">
+    • Labeled Test Set: 13/13 correct (stance &amp; refusal)
+  </text>
+  <text x="934" y="642" font-family="ui-monospace, monospace" font-size="12" fill="#FAF6F0">
+    • Passage Selection F1: 97.1% (100% precision)
+  </text>
+  <text x="934" y="668" font-family="ui-monospace, monospace" font-size="12" fill="#FAF6F0">
+    • Context Reduction: 34% to 39% fewer input chars
+  </text>
+  <text x="934" y="694" font-family="ui-monospace, monospace" font-size="12" fill="#FAF6F0">
+    • Single-Decision Latency: 1,037 ms p50 on AWS CPU
+  </text>
+  <text x="934" y="720" font-family="ui-monospace, monospace" font-size="12" fill="#FAF6F0">
+    • 7-Question Shared-Prefix Batch: 3,847 ms (550 ms/q)
+  </text>
+  <text x="934" y="746" font-family="ui-monospace, monospace" font-size="12" fill="#5EEAD4">
+    • Reusable Module: patterns/context_memory/
+  </text>
+  <text x="934" y="772" font-family="ui-monospace, monospace" font-size="11" fill="#A39E93">
+    AMX-BF16 LoRA merge + uniform suffix batching
+  </text>
+
+  <!-- Separate Refusal / Unclear callout strip -->
+  <rect x="64" y="718" width="820" height="80" rx="12" fill="#FAF6F0" stroke="#D8CEBE" stroke-width="1.5"/>
+  <text x="88" y="746" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" fill="#141413">
+    SEPARATE REFUSAL &amp; UNCLEAR HANDLING (NEVER FORCED ONTO SPECTRUM)
+  </text>
+  <text x="88" y="772" font-family="Georgia, serif" font-size="12.5" fill="#4A4843">
+    Refusals (P(refusal) &gt;= 0.75) and low-evidence responses (conf &lt; 0.25 or max score &lt; 1.45) sit in a dedicated tray.
+  </text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <linearGradient id="specGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="#FAF6F0" stroke="#DED5C4" stroke-width="4"/>
+  <rect x="28" y="28" width="1144" height="264" rx="16" fill="#F3ECE0" stroke="#DDD3C2" stroke-width="2"/>
+
+  <!-- Left: Logo Icon -->
+  <g transform="translate(68, 72) scale(1.35)">
+    <rect x="4" y="4" width="120" height="120" rx="26" fill="#141413"/>
+    <g transform="rotate(-8 64 42)">
+      <rect x="20" y="34" width="88" height="16" rx="8" fill="url(#specGrad)"/>
+      <circle cx="32" cy="42" r="4.5" fill="#FAF6F0"/>
+      <circle cx="64" cy="42" r="4.5" fill="#FAF6F0"/>
+      <circle cx="96" cy="42" r="4.5" fill="#FAF6F0"/>
+    </g>
+    <rect x="54" y="50" width="20" height="48" rx="6" fill="#FAF6F0"/>
+    <polygon points="64,45 52,57 76,57" fill="#C83E2B"/>
+    <rect x="42" y="92" width="44" height="8" rx="4" fill="#FAF6F0"/>
+  </g>
+
+  <!-- Center/Right Editorial Typography -->
+  <text x="272" y="102" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700" fill="#C83E2B" letter-spacing="0.5">
+    Before you let AI shape your opinion, see how other AIs answer.
+  </text>
+
+  <text x="270" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="900" fill="#141413" letter-spacing="-1">
+    TILT
+  </text>
+  <rect x="442" y="126" width="245" height="36" rx="8" fill="#141413"/>
+  <text x="460" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700" fill="#FAF6F0" letter-spacing="1.5">
+    GROUND NEWS FOR AI
+  </text>
+
+  <text x="272" y="212" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#3D3A35">
+    “Same question. Different AI. See the slant.”
+  </text>
+
+  <!-- Mini Spectrum Preview Strip -->
+  <rect x="272" y="236" width="840" height="10" rx="5" fill="url(#specGrad)"/>
+  <circle cx="420" cy="241" r="9" fill="#D97706" stroke="#FAF6F0" stroke-width="3"/>
+  <circle cx="590" cy="241" r="9" fill="#2563EB" stroke="#FAF6F0" stroke-width="3"/>
+  <circle cx="890" cy="241" r="9" fill="#0F766E" stroke="#FAF6F0" stroke-width="3"/>
+  <text x="272" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#5E5A52">
+    Claude Sonnet 4.5 · Llama 3.3 70B · DeepSeek V3.2   |   Powered by Strands Decider 2B (#strands-decider-2b · #context-memory)
+  </text>
+</svg>

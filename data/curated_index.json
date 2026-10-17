@@ -1,0 +1,22 @@
+{
+  "by_topic_id": {
+    "smartphones-in-schools": "smartphones-in-schools-724344",
+    "ai-copyright-training": "ai-copyright-training-0ec8f5",
+    "open-source-frontier-ai": "open-source-frontier-ai-db7d3b",
+    "social-media-under-16": "social-media-under-16-45ac4e",
+    "return-to-office-mandates": "return-to-office-mandates-389109",
+    "universal-basic-income-ai": "universal-basic-income-ai-a18f65",
+    "nuclear-energy-expansion": "nuclear-energy-expansion-624d87",
+    "congestion-pricing-car-bans": "congestion-pricing-car-bans-74b975"
+  },
+  "by_question_key": {
+    "6beb8be188ce8281": "smartphones-in-schools-724344",
+    "153cd5ae6ff842cb": "ai-copyright-training-0ec8f5",
+    "4d8352e309a60986": "open-source-frontier-ai-db7d3b",
+    "ffa5c4f3c7052742": "social-media-under-16-45ac4e",
+    "f5c02b020c1d27b2": "return-to-office-mandates-389109",
+    "374eb198e2506b03": "universal-basic-income-ai-a18f65",
+    "e46a46d6be286a4f": "nuclear-energy-expansion-624d87",
+    "fb925f404bb60571": "congestion-pricing-car-bans-74b975"
+  }
+}

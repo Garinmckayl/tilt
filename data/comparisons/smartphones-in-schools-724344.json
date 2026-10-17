@@ -1,0 +1,525 @@
+{
+  "id": "smartphones-in-schools-724344",
+  "created_at": "2026-10-16T18:11:55.537251+00:00",
+  "cached": false,
+  "topic": {
+    "id": "smartphones-in-schools",
+    "question": "Should schools ban smartphones?",
+    "short_title": "School smartphone bans",
+    "category": "Technology",
+    "is_curated": true,
+    "left_option": {
+      "key": "opposes_ban",
+      "label": "Opposes a ban",
+      "short_label": "Opposes a ban",
+      "description": "Argues against banning smartphones in schools, favoring structured classroom integration, digital literacy, or student autonomy.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Mixed / Case-by-case",
+      "short_label": "Mixed / Conditional",
+      "description": "Weighs pros and cons equally without endorsing a ban, leaving rules to individual teachers, age tiers, or local school context.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "supports_ban",
+      "label": "Supports a ban",
+      "short_label": "Supports a ban",
+      "description": "Argues in favor of banning or locking away student smartphones during class hours or the school day to protect focus and mental health.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "opposes_ban": "Opposes a ban: Argues against banning smartphones in schools, favoring structured classroom integration, digital literacy, or student autonomy.",
+      "mixed": "Mixed / Case-by-case: Weighs pros and cons equally without endorsing a ban, leaving rules to individual teachers, age tiers, or local school context.",
+      "supports_ban": "Supports a ban: Argues in favor of banning or locking away student smartphones during class hours or the school day to protect focus and mental health."
+    }
+  },
+  "question": "Should schools ban smartphones?",
+  "summary": {
+    "where_they_differ": "DeepSeek argues for an outright ban to reclaim classrooms as distraction-free learning spaces, while Claude advocates for nuanced restrictions (phone-free during instruction, permitted during breaks) that preserve educational and emergency uses. Llama occupies middle ground, endorsing bans during class hours specifically rather than school-wide prohibition.",
+    "headline_summary": "Ban advocates clash with flexible-restriction pragmatists",
+    "agreement_level": "nuanced_split",
+    "unique_stance_count": 2
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "The question of banning smartphones in schools requires balancing legitimate concerns with practical realities. Strong evidence shows that smartphones can significantly distract students, reduce face-to-face social interaction, and negatively impact mental health and academic performance. Many students struggle with self-regulation, and the constant pull of notifications disrupts learning and concentration.\n\nHowever, an outright ban may be overly rigid. Smartphones can serve valuable educational purposes—research, educational apps, organization tools, and emergency communication. A more nuanced approach might work better: restricting phone use during instructional time and allowing it during breaks, or implementing \"phone-free zones\" in classrooms while permitting controlled use elsewhere.\n\nThe best policy likely depends on the school's specific context, age group, and culture. Elementary schools might benefit from stricter limits, while high schools could focus on teaching responsible use. Whatever the approach, schools should prioritize creating environments that foster genuine learning and healthy social development.",
+      "generation_latency_ms": 6356.2,
+      "usage": {
+        "input_tokens": 42,
+        "output_tokens": 202,
+        "total_tokens": 244
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Mixed / Case-by-case",
+        "stance_short_label": "Mixed / Conditional",
+        "stance_description": "Weighs pros and cons equally without endorsing a ban, leaving rules to individual teachers, age tiers, or local school context.",
+        "on_spectrum": true,
+        "spectrum_x": 36.0,
+        "pole_a_prob": 0.3634,
+        "mixed_prob": 0.5773,
+        "pole_b_prob": 0.0593
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_ban": 0.3634,
+          "mixed": 0.5773,
+          "supports_ban": 0.0593
+        },
+        "stance_confidence": 0.3659,
+        "is_refusal": false,
+        "refusal_probability": 0.0818,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "pruned_passage_ids": [
+          "P3"
+        ],
+        "primary_evidence_passage_id": "P2",
+        "context_compression_ratio": 0.7043,
+        "context_reduction_ratio": 0.2957,
+        "total_char_count": 1133,
+        "selected_char_count": 798,
+        "decider_latency_ms": 5146.43,
+        "decider_usage": {
+          "input_tokens": 814,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "The question of banning smartphones in schools requires balancing legitimate concerns with practical realities. Strong evidence shows that smartphones can significantly distract students, reduce face-to-face social interaction, and negatively impact mental health and academic performance. Many students struggle with self-regulation, and the constant pull of notifications disrupts learning and concentration.",
+          "start_char": 0,
+          "end_char": 410,
+          "relevance_score": 1.8619,
+          "relevance_normalized": 0.6206,
+          "relevance_confidence": 0.4891,
+          "level_probabilities": {
+            "0": 0.1179,
+            "1": 0.149,
+            "2": 0.4864,
+            "3": 0.2467
+          },
+          "evidence_choice_probability": 0.2628,
+          "combined_utility": 0.4954,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, an outright ban may be overly rigid. Smartphones can serve valuable educational purposes—research, educational apps, organization tools, and emergency communication. A more nuanced approach might work better: restricting phone use during instructional time and allowing it during breaks, or implementing \"phone-free zones\" in classrooms while permitting controlled use elsewhere.",
+          "start_char": 412,
+          "end_char": 800,
+          "relevance_score": 1.6167,
+          "relevance_normalized": 0.5389,
+          "relevance_confidence": 0.3143,
+          "level_probabilities": {
+            "0": 0.2451,
+            "1": 0.1658,
+            "2": 0.3163,
+            "3": 0.2728
+          },
+          "evidence_choice_probability": 0.425,
+          "combined_utility": 0.499,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "The best policy likely depends on the school's specific context, age group, and culture. Elementary schools might benefit from stricter limits, while high schools could focus on teaching responsible use. Whatever the approach, schools should prioritize creating environments that foster genuine learning and healthy social development.",
+          "start_char": 802,
+          "end_char": 1137,
+          "relevance_score": 1.7274,
+          "relevance_normalized": 0.5758,
+          "relevance_confidence": 0.296,
+          "level_probabilities": {
+            "0": 0.215,
+            "1": 0.1894,
+            "2": 0.249,
+            "3": 0.3467
+          },
+          "evidence_choice_probability": 0.3122,
+          "combined_utility": 0.4835,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "primary_evidence_passage_id": "P2",
+      "framing_explanation": "Acknowledges smartphone harms but rejects outright bans in favor of context-specific restrictions balancing learning and legitimate device utility.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A more nuanced approach might work better: restricting phone use during instructional time and allowing it during breaks, or implementing \"phone-free zones\" in classrooms while permitting controlled use elsewhere.",
+        "start_char": 587,
+        "end_char": 800,
+        "passage_id": "P2"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Schools should consider banning smartphones during class hours. This can help minimize distractions and promote focused learning. Smartphones can be a significant source of distraction, with notifications, social media, and games competing for students' attention.\n\nBy banning smartphones, schools can create a more conducive learning environment. Students will be more likely to engage with the material and participate in class discussions. Additionally, banning smartphones can help reduce cyberbullying and other online issues that can arise during school hours.\n\nHowever, a complete ban may not be necessary. Implementing phone-free zones or designated phone-use times can be a more balanced approach, allowing students to use their phones responsibly while still maintaining a focused learning environment.",
+      "generation_latency_ms": 2139.2,
+      "usage": {
+        "input_tokens": 62,
+        "output_tokens": 137,
+        "total_tokens": 199
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Mixed / Case-by-case",
+        "stance_short_label": "Mixed / Conditional",
+        "stance_description": "Weighs pros and cons equally without endorsing a ban, leaving rules to individual teachers, age tiers, or local school context.",
+        "on_spectrum": true,
+        "spectrum_x": 59.6,
+        "pole_a_prob": 0.2204,
+        "mixed_prob": 0.3666,
+        "pole_b_prob": 0.413
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "supports_ban",
+        "stance_probabilities": {
+          "opposes_ban": 0.2204,
+          "mixed": 0.3666,
+          "supports_ban": 0.413
+        },
+        "stance_confidence": 0.1196,
+        "is_refusal": false,
+        "refusal_probability": 0.0887,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "pruned_passage_ids": [
+          "P3"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.698,
+        "context_reduction_ratio": 0.302,
+        "total_char_count": 808,
+        "selected_char_count": 564,
+        "decider_latency_ms": 4947.28,
+        "decider_usage": {
+          "input_tokens": 769,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Schools should consider banning smartphones during class hours. This can help minimize distractions and promote focused learning. Smartphones can be a significant source of distraction, with notifications, social media, and games competing for students' attention.",
+          "start_char": 0,
+          "end_char": 264,
+          "relevance_score": 1.8942,
+          "relevance_normalized": 0.6314,
+          "relevance_confidence": 0.3896,
+          "level_probabilities": {
+            "0": 0.1565,
+            "1": 0.1287,
+            "2": 0.379,
+            "3": 0.3358
+          },
+          "evidence_choice_probability": 0.4048,
+          "combined_utility": 0.5521,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "By banning smartphones, schools can create a more conducive learning environment. Students will be more likely to engage with the material and participate in class discussions. Additionally, banning smartphones can help reduce cyberbullying and other online issues that can arise during school hours.",
+          "start_char": 266,
+          "end_char": 566,
+          "relevance_score": 1.8256,
+          "relevance_normalized": 0.6085,
+          "relevance_confidence": 0.355,
+          "level_probabilities": {
+            "0": 0.1725,
+            "1": 0.1678,
+            "2": 0.3212,
+            "3": 0.3385
+          },
+          "evidence_choice_probability": 0.2439,
+          "combined_utility": 0.4809,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "However, a complete ban may not be necessary. Implementing phone-free zones or designated phone-use times can be a more balanced approach, allowing students to use their phones responsibly while still maintaining a focused learning environment.",
+          "start_char": 568,
+          "end_char": 812,
+          "relevance_score": 1.268,
+          "relevance_normalized": 0.4227,
+          "relevance_confidence": 0.2676,
+          "level_probabilities": {
+            "0": 0.3839,
+            "1": 0.1822,
+            "2": 0.2158,
+            "3": 0.218
+          },
+          "evidence_choice_probability": 0.3513,
+          "combined_utility": 0.3977,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "Supports class-hour bans to minimize distraction and improve engagement while implicitly permitting phones outside instructional periods.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Schools should consider banning smartphones during class hours.",
+        "start_char": 0,
+        "end_char": 63,
+        "passage_id": "P1"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Schools should implement a ban on smartphones during the school day. The primary purpose of school is to provide an environment conducive to focused learning and social development. Smartphones are a constant source of distraction, pulling students' attention away from lessons and towards social media, games, and messaging. This not only hinders individual academic performance but also disrupts the classroom dynamic for everyone. Furthermore, phones can facilitate cyberbullying and social anxiety, undermining the safe and inclusive community schools strive to create.\n\nHowever, a total ban must be balanced with practical considerations. Schools should allow phones to be kept securely in lockers or pouches, accessible only in emergencies or specific circumstances. This respects that some students need phones for travel or family communication after school. Ultimately, a well-structured ban fosters better student engagement, reduces disciplinary issues, and encourages face-to-face interaction. It is a necessary step to reclaim the classroom as a space for deep learning and meaningful connection.",
+      "generation_latency_ms": 2049.1,
+      "usage": {
+        "input_tokens": 31,
+        "output_tokens": 189,
+        "total_tokens": 220
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "pole_b",
+        "stance_key": "supports_ban",
+        "stance_label": "Supports a ban",
+        "stance_short_label": "Supports a ban",
+        "stance_description": "Argues in favor of banning or locking away student smartphones during class hours or the school day to protect focus and mental health.",
+        "on_spectrum": true,
+        "spectrum_x": 87.4,
+        "pole_a_prob": 0.0936,
+        "mixed_prob": 0.064,
+        "pole_b_prob": 0.8424
+      },
+      "decider": {
+        "assigned_stance": "supports_ban",
+        "raw_top_stance": "supports_ban",
+        "stance_probabilities": {
+          "opposes_ban": 0.0936,
+          "mixed": 0.064,
+          "supports_ban": 0.8424
+        },
+        "stance_confidence": 0.7636,
+        "is_refusal": false,
+        "refusal_probability": 0.0875,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P4"
+        ],
+        "pruned_passage_ids": [
+          "P2",
+          "P3"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.5131,
+        "context_reduction_ratio": 0.4869,
+        "total_char_count": 1105,
+        "selected_char_count": 567,
+        "decider_latency_ms": 5537.84,
+        "decider_usage": {
+          "input_tokens": 939,
+          "output_tokens": 7
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Schools should implement a ban on smartphones during the school day. The primary purpose of school is to provide an environment conducive to focused learning and social development. Smartphones are a constant source of distraction, pulling students' attention away from lessons and towards social media, games, and messaging.",
+          "start_char": 0,
+          "end_char": 325,
+          "relevance_score": 1.9593,
+          "relevance_normalized": 0.6531,
+          "relevance_confidence": 0.3391,
+          "level_probabilities": {
+            "0": 0.1675,
+            "1": 0.1219,
+            "2": 0.2942,
+            "3": 0.4163
+          },
+          "evidence_choice_probability": 0.3506,
+          "combined_utility": 0.5472,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "This not only hinders individual academic performance but also disrupts the classroom dynamic for everyone. Furthermore, phones can facilitate cyberbullying and social anxiety, undermining the safe and inclusive community schools strive to create.",
+          "start_char": 326,
+          "end_char": 573,
+          "relevance_score": 1.6375,
+          "relevance_normalized": 0.5458,
+          "relevance_confidence": 0.4082,
+          "level_probabilities": {
+            "0": 0.1661,
+            "1": 0.2656,
+            "2": 0.3331,
+            "3": 0.2353
+          },
+          "evidence_choice_probability": 0.1447,
+          "combined_utility": 0.4054,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "However, a total ban must be balanced with practical considerations. Schools should allow phones to be kept securely in lockers or pouches, accessible only in emergencies or specific circumstances. This respects that some students need phones for travel or family communication after school.",
+          "start_char": 575,
+          "end_char": 866,
+          "relevance_score": 1.0407,
+          "relevance_normalized": 0.3469,
+          "relevance_confidence": 0.3487,
+          "level_probabilities": {
+            "0": 0.443,
+            "1": 0.2018,
+            "2": 0.2266,
+            "3": 0.1285
+          },
+          "evidence_choice_probability": 0.1486,
+          "combined_utility": 0.2775,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P4",
+          "number": 4,
+          "text": "Ultimately, a well-structured ban fosters better student engagement, reduces disciplinary issues, and encourages face-to-face interaction. It is a necessary step to reclaim the classroom as a space for deep learning and meaningful connection.",
+          "start_char": 867,
+          "end_char": 1109,
+          "relevance_score": 1.9025,
+          "relevance_normalized": 0.6342,
+          "relevance_confidence": 0.3152,
+          "level_probabilities": {
+            "0": 0.1799,
+            "1": 0.1488,
+            "2": 0.2602,
+            "3": 0.4111
+          },
+          "evidence_choice_probability": 0.3561,
+          "combined_utility": 0.5369,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P4"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "Advocates comprehensive school-day bans as necessary to restore focused learning and face-to-face interaction as core educational values.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Schools should implement a ban on smartphones during the school day.",
+        "start_char": 0,
+        "end_char": 68,
+        "passage_id": "P1"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 3046,
+      "total_chars_after": 1929,
+      "overall_compression_ratio": 0.6333
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 6529.6,
+      "strands_decider_total_ms": 15631.5,
+      "strands_decider_wall_ms": 15639.4,
+      "strands_synthesis_agent_ms": 4398.8,
+      "total_pipeline_wall_ms": 26568.7
+    }
+  }
+}

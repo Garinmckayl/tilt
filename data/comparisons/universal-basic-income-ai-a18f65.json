@@ -1,0 +1,525 @@
+{
+  "id": "universal-basic-income-ai-a18f65",
+  "created_at": "2026-10-16T18:08:02.415443+00:00",
+  "cached": false,
+  "topic": {
+    "id": "universal-basic-income-ai",
+    "question": "Should governments enact a universal basic income to offset AI job displacement?",
+    "short_title": "UBI for AI displacement",
+    "category": "Economics",
+    "is_curated": true,
+    "left_option": {
+      "key": "opposes_ubi",
+      "label": "Opposes UBI",
+      "short_label": "Opposes UBI",
+      "description": "Argues universal cash transfers are fiscally unsustainable, inflationary, and less effective than targeted safety nets and job retraining.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Targeted transition support",
+      "short_label": "Mixed / Targeted",
+      "description": "Favors conditional wage insurance, negative income tax pilots, or targeted retraining before committing to permanent universal payouts.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "supports_ubi",
+      "label": "Supports UBI",
+      "short_label": "Supports UBI",
+      "description": "Argues a universal basic income is an essential economic floor to share AI productivity gains and protect workers from structural displacement.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "opposes_ubi": "Opposes UBI: Argues universal cash transfers are fiscally unsustainable, inflationary, and less effective than targeted safety nets and job retraining.",
+      "mixed": "Targeted transition support: Favors conditional wage insurance, negative income tax pilots, or targeted retraining before committing to permanent universal payouts.",
+      "supports_ubi": "Supports UBI: Argues a universal basic income is an essential economic floor to share AI productivity gains and protect workers from structural displacement."
+    }
+  },
+  "question": "Should governments enact a universal basic income to offset AI job displacement?",
+  "summary": {
+    "where_they_differ": "Claude frames UBI as conditionally necessary only if displacement outpaces job creation, advocating measured pilots and strengthened existing safety nets first. DeepSeek and Llama argue UBI is a proactive necessity now, asserting that retraining alone cannot match the scale and speed of AI disruption.",
+    "headline_summary": "Proactive UBI versus cautious, evidence-based transition support",
+    "agreement_level": "nuanced_split",
+    "unique_stance_count": 2
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "The case for UBI in response to AI displacement is compelling but complex. If AI truly automates large swaths of employment faster than new jobs emerge, some form of income support may become necessary to maintain social stability and consumer demand. UBI could provide a cushion for workers to retrain and adapt, while preventing the economic disruption of mass unemployment.\n\nHowever, significant challenges exist. The costs would be enormous, requiring major tax restructuring. There's also risk of reducing work incentives and the dignity many derive from employment. We don't yet know if AI will cause net job losses or follow historical patterns where technology creates new categories of work.\n\nA measured approach might be wiser: strengthening existing safety nets, investing heavily in education and retraining, and potentially piloting UBI programs in heavily affected regions. This allows us to respond to actual displacement patterns rather than speculative scenarios, while maintaining flexibility as the AI revolution unfolds.",
+      "generation_latency_ms": 6354.6,
+      "usage": {
+        "input_tokens": 51,
+        "output_tokens": 196,
+        "total_tokens": 247
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Targeted transition support",
+        "stance_short_label": "Mixed / Targeted",
+        "stance_description": "Favors conditional wage insurance, negative income tax pilots, or targeted retraining before committing to permanent universal payouts.",
+        "on_spectrum": true,
+        "spectrum_x": 52.6,
+        "pole_a_prob": 0.1738,
+        "mixed_prob": 0.6001,
+        "pole_b_prob": 0.2261
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_ubi": 0.1738,
+          "mixed": 0.6001,
+          "supports_ubi": 0.2261
+        },
+        "stance_confidence": 0.4001,
+        "is_refusal": false,
+        "refusal_probability": 0.0851,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.6892,
+        "context_reduction_ratio": 0.3108,
+        "total_char_count": 1036,
+        "selected_char_count": 714,
+        "decider_latency_ms": 4889.28,
+        "decider_usage": {
+          "input_tokens": 831,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "The case for UBI in response to AI displacement is compelling but complex. If AI truly automates large swaths of employment faster than new jobs emerge, some form of income support may become necessary to maintain social stability and consumer demand. UBI could provide a cushion for workers to retrain and adapt, while preventing the economic disruption of mass unemployment.",
+          "start_char": 0,
+          "end_char": 376,
+          "relevance_score": 1.9595,
+          "relevance_normalized": 0.6532,
+          "relevance_confidence": 0.3505,
+          "level_probabilities": {
+            "0": 0.1638,
+            "1": 0.1184,
+            "2": 0.3123,
+            "3": 0.4055
+          },
+          "evidence_choice_probability": 0.3826,
+          "combined_utility": 0.5585,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, significant challenges exist. The costs would be enormous, requiring major tax restructuring. There's also risk of reducing work incentives and the dignity many derive from employment. We don't yet know if AI will cause net job losses or follow historical patterns where technology creates new categories of work.",
+          "start_char": 378,
+          "end_char": 700,
+          "relevance_score": 1.2947,
+          "relevance_normalized": 0.4316,
+          "relevance_confidence": 0.3268,
+          "level_probabilities": {
+            "0": 0.33,
+            "1": 0.2309,
+            "2": 0.2535,
+            "3": 0.1856
+          },
+          "evidence_choice_probability": 0.1117,
+          "combined_utility": 0.3196,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A measured approach might be wiser: strengthening existing safety nets, investing heavily in education and retraining, and potentially piloting UBI programs in heavily affected regions. This allows us to respond to actual displacement patterns rather than speculative scenarios, while maintaining flexibility as the AI revolution unfolds.",
+          "start_char": 702,
+          "end_char": 1040,
+          "relevance_score": 1.6381,
+          "relevance_normalized": 0.546,
+          "relevance_confidence": 0.3017,
+          "level_probabilities": {
+            "0": 0.2425,
+            "1": 0.1719,
+            "2": 0.2905,
+            "3": 0.2951
+          },
+          "evidence_choice_probability": 0.5057,
+          "combined_utility": 0.5319,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "UBI may become necessary if displacement accelerates, but measured pilots and strengthened safety nets should precede permanent universal payouts.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A measured approach might be wiser: strengthening existing safety nets, investing heavily in education and retraining, and potentially piloting UBI programs in heavily affected regions.",
+        "start_char": 702,
+        "end_char": 887,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Implementing a universal basic income (UBI) could be a viable solution to mitigate the effects of AI job displacement. As automation replaces certain jobs, a UBI would provide a safety net for individuals who lose their employment.\n\nThis approach would ensure that everyone's basic needs are met, regardless of their employment status. It would also give people the freedom to pursue alternative careers or entrepreneurial ventures.\n\nBy enacting a UBI, governments can help alleviate the negative consequences of AI-driven job displacement and promote a more equitable society.",
+      "generation_latency_ms": 1148.7,
+      "usage": {
+        "input_tokens": 70,
+        "output_tokens": 105,
+        "total_tokens": 175
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "pole_b",
+        "stance_key": "supports_ubi",
+        "stance_label": "Supports UBI",
+        "stance_short_label": "Supports UBI",
+        "stance_description": "Argues a universal basic income is an essential economic floor to share AI productivity gains and protect workers from structural displacement.",
+        "on_spectrum": true,
+        "spectrum_x": 90.9,
+        "pole_a_prob": 0.0403,
+        "mixed_prob": 0.1009,
+        "pole_b_prob": 0.8588
+      },
+      "decider": {
+        "assigned_stance": "supports_ubi",
+        "raw_top_stance": "supports_ubi",
+        "stance_probabilities": {
+          "opposes_ubi": 0.0403,
+          "mixed": 0.1009,
+          "supports_ubi": 0.8588
+        },
+        "stance_confidence": 0.7882,
+        "is_refusal": false,
+        "refusal_probability": 0.0825,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.6527,
+        "context_reduction_ratio": 0.3473,
+        "total_char_count": 573,
+        "selected_char_count": 374,
+        "decider_latency_ms": 4654.0,
+        "decider_usage": {
+          "input_tokens": 752,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Implementing a universal basic income (UBI) could be a viable solution to mitigate the effects of AI job displacement. As automation replaces certain jobs, a UBI would provide a safety net for individuals who lose their employment.",
+          "start_char": 0,
+          "end_char": 231,
+          "relevance_score": 2.0004,
+          "relevance_normalized": 0.6668,
+          "relevance_confidence": 0.4126,
+          "level_probabilities": {
+            "0": 0.1236,
+            "1": 0.1407,
+            "2": 0.3475,
+            "3": 0.3882
+          },
+          "evidence_choice_probability": 0.3532,
+          "combined_utility": 0.557,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "This approach would ensure that everyone's basic needs are met, regardless of their employment status. It would also give people the freedom to pursue alternative careers or entrepreneurial ventures.",
+          "start_char": 233,
+          "end_char": 432,
+          "relevance_score": 1.6915,
+          "relevance_normalized": 0.5638,
+          "relevance_confidence": 0.4301,
+          "level_probabilities": {
+            "0": 0.1316,
+            "1": 0.2979,
+            "2": 0.3179,
+            "3": 0.2526
+          },
+          "evidence_choice_probability": 0.1439,
+          "combined_utility": 0.4168,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "By enacting a UBI, governments can help alleviate the negative consequences of AI-driven job displacement and promote a more equitable society.",
+          "start_char": 434,
+          "end_char": 577,
+          "relevance_score": 2.0484,
+          "relevance_normalized": 0.6828,
+          "relevance_confidence": 0.3589,
+          "level_probabilities": {
+            "0": 0.1321,
+            "1": 0.1587,
+            "2": 0.2379,
+            "3": 0.4713
+          },
+          "evidence_choice_probability": 0.5029,
+          "combined_utility": 0.6198,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "UBI is a viable solution providing essential safety net and promoting equity as automation replaces jobs across the economy.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "By enacting a UBI, governments can help alleviate the negative consequences of AI-driven job displacement and promote a more equitable society.",
+        "start_char": 434,
+        "end_char": 577,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Yes, governments should proactively enact a universal basic income (UBI) as a necessary adaptation to widespread AI-driven job displacement. While retraining programs are important, they cannot fully address the scale and speed of disruption, especially for mid-career workers in roles made obsolete. A UBI would provide a crucial economic floor, preventing severe poverty and social unrest while allowing people the security to retrain, care for family, or pursue entrepreneurial ventures that AI cannot easily replicate.\n\nHowever, UBI must be part of a broader strategy. It should be funded through mechanisms like taxes on automation or data, and paired with robust investments in education, affordable housing, and healthcare. This approach would not only cushion the transition but also harness AI's productivity gains for broader societal benefit. Ultimately, UBI is a pragmatic tool to ensure that technological progress leads to shared prosperity rather than destabilizing inequality.",
+      "generation_latency_ms": 3433.5,
+      "usage": {
+        "input_tokens": 39,
+        "output_tokens": 176,
+        "total_tokens": 215
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "pole_b",
+        "stance_key": "supports_ubi",
+        "stance_label": "Supports UBI",
+        "stance_short_label": "Supports UBI",
+        "stance_description": "Argues a universal basic income is an essential economic floor to share AI productivity gains and protect workers from structural displacement.",
+        "on_spectrum": true,
+        "spectrum_x": 93.0,
+        "pole_a_prob": 0.0148,
+        "mixed_prob": 0.051,
+        "pole_b_prob": 0.9342
+      },
+      "decider": {
+        "assigned_stance": "supports_ubi",
+        "raw_top_stance": "supports_ubi",
+        "stance_probabilities": {
+          "opposes_ubi": 0.0148,
+          "mixed": 0.051,
+          "supports_ubi": 0.9342
+        },
+        "stance_confidence": 0.9013,
+        "is_refusal": false,
+        "refusal_probability": 0.0831,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "pruned_passage_ids": [
+          "P3",
+          "P4"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.5273,
+        "context_reduction_ratio": 0.4727,
+        "total_char_count": 988,
+        "selected_char_count": 521,
+        "decider_latency_ms": 5866.18,
+        "decider_usage": {
+          "input_tokens": 939,
+          "output_tokens": 7
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Yes, governments should proactively enact a universal basic income (UBI) as a necessary adaptation to widespread AI-driven job displacement. While retraining programs are important, they cannot fully address the scale and speed of disruption, especially for mid-career workers in roles made obsolete.",
+          "start_char": 0,
+          "end_char": 300,
+          "relevance_score": 2.0945,
+          "relevance_normalized": 0.6982,
+          "relevance_confidence": 0.3799,
+          "level_probabilities": {
+            "0": 0.13,
+            "1": 0.1188,
+            "2": 0.2779,
+            "3": 0.4733
+          },
+          "evidence_choice_probability": 0.3465,
+          "combined_utility": 0.5751,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "A UBI would provide a crucial economic floor, preventing severe poverty and social unrest while allowing people the security to retrain, care for family, or pursue entrepreneurial ventures that AI cannot easily replicate.",
+          "start_char": 301,
+          "end_char": 522,
+          "relevance_score": 1.8916,
+          "relevance_normalized": 0.6305,
+          "relevance_confidence": 0.3894,
+          "level_probabilities": {
+            "0": 0.1416,
+            "1": 0.1752,
+            "2": 0.3333,
+            "3": 0.3499
+          },
+          "evidence_choice_probability": 0.3049,
+          "combined_utility": 0.5165,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "However, UBI must be part of a broader strategy. It should be funded through mechanisms like taxes on automation or data, and paired with robust investments in education, affordable housing, and healthcare. This approach would not only cushion the transition but also harness AI's productivity gains for broader societal benefit.",
+          "start_char": 524,
+          "end_char": 853,
+          "relevance_score": 1.3737,
+          "relevance_normalized": 0.4579,
+          "relevance_confidence": 0.3122,
+          "level_probabilities": {
+            "0": 0.2952,
+            "1": 0.2626,
+            "2": 0.2155,
+            "3": 0.2267
+          },
+          "evidence_choice_probability": 0.1402,
+          "combined_utility": 0.3467,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P4",
+          "number": 4,
+          "text": "Ultimately, UBI is a pragmatic tool to ensure that technological progress leads to shared prosperity rather than destabilizing inequality.",
+          "start_char": 854,
+          "end_char": 992,
+          "relevance_score": 1.9634,
+          "relevance_normalized": 0.6545,
+          "relevance_confidence": 0.3076,
+          "level_probabilities": {
+            "0": 0.1659,
+            "1": 0.1663,
+            "2": 0.2063,
+            "3": 0.4615
+          },
+          "evidence_choice_probability": 0.2083,
+          "combined_utility": 0.4983,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "Governments must proactively enact UBI now because retraining cannot address the scale and speed of AI-driven job obsolescence.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "While retraining programs are important, they cannot fully address the scale and speed of disruption, especially for mid-career workers in roles made obsolete.",
+        "start_char": 141,
+        "end_char": 300,
+        "passage_id": "P1"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 2597,
+      "total_chars_after": 1609,
+      "overall_compression_ratio": 0.6196
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 6360.2,
+      "strands_decider_total_ms": 15409.5,
+      "strands_decider_wall_ms": 15416.5,
+      "strands_synthesis_agent_ms": 4073.1,
+      "total_pipeline_wall_ms": 25850.6
+    }
+  }
+}

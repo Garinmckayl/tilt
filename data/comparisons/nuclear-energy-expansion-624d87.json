@@ -1,0 +1,504 @@
+{
+  "id": "nuclear-energy-expansion-624d87",
+  "created_at": "2026-10-16T18:08:27.709125+00:00",
+  "cached": false,
+  "topic": {
+    "id": "nuclear-energy-expansion",
+    "question": "Should governments aggressively expand nuclear power to meet climate goals?",
+    "short_title": "Nuclear energy expansion",
+    "category": "Politics",
+    "is_curated": true,
+    "left_option": {
+      "key": "prioritize_renewables",
+      "label": "Prioritize renewables over nuclear",
+      "short_label": "Renewables first",
+      "description": "Argues against aggressive nuclear expansion due to high capital costs, long construction timelines, and waste management challenges.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Balanced energy mix",
+      "short_label": "Mixed / Balanced",
+      "description": "Supports maintaining existing reactors and selective deployment alongside wind, solar, and grid storage depending on regional economics.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "expand_nuclear",
+      "label": "Aggressively expand nuclear",
+      "short_label": "Expand nuclear",
+      "description": "Argues rapid nuclear expansion is indispensable for reliable, zero-carbon 24/7 baseload electricity and deep decarbonization.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "prioritize_renewables": "Prioritize renewables over nuclear: Argues against aggressive nuclear expansion due to high capital costs, long construction timelines, and waste management challenges.",
+      "mixed": "Balanced energy mix: Supports maintaining existing reactors and selective deployment alongside wind, solar, and grid storage depending on regional economics.",
+      "expand_nuclear": "Aggressively expand nuclear: Argues rapid nuclear expansion is indispensable for reliable, zero-carbon 24/7 baseload electricity and deep decarbonization."
+    }
+  },
+  "question": "Should governments aggressively expand nuclear power to meet climate goals?",
+  "summary": {
+    "where_they_differ": "DeepSeek emphasizes nuclear as a critical, essential component for reliable baseload power and deep decarbonization, while Claude and Llama both stress that nuclear should complement, not crowd out, faster-deploying renewables and storage suited to near-term climate urgency. Claude adds explicit cost-effectiveness concerns absent from DeepSeek's framing.",
+    "headline_summary": "Nuclear essential baseload vs. balanced portfolio priority",
+    "agreement_level": "nuanced_split",
+    "unique_stance_count": 2
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Nuclear power presents a genuine dilemma for climate policy. On one hand, it provides reliable, carbon-free baseload electricity that renewable sources can't always match. Countries like France have demonstrated that nuclear can dramatically reduce emissions. Given the urgency of climate change, we may need all available low-carbon tools.\n\nHowever, \"aggressive\" expansion faces real obstacles: nuclear plants are extremely expensive and slow to build, often taking 10-15 years and running over budget. That same investment in renewables plus storage typically delivers more carbon reduction faster. There are also unresolved concerns about waste disposal, accident risks, and weapons proliferation.\n\nA balanced approach makes sense: maintain and extend existing nuclear plants where safe, support next-generation reactor research, but prioritize faster-deploying solutions like wind, solar, and storage for near-term climate goals. The right mix varies by country based on geography, existing infrastructure, and resources. Nuclear can play a role, but shouldn't crowd out more cost-effective options.",
+      "generation_latency_ms": 7022.7,
+      "usage": {
+        "input_tokens": 50,
+        "output_tokens": 213,
+        "total_tokens": 263
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Balanced energy mix",
+        "stance_short_label": "Mixed / Balanced",
+        "stance_description": "Supports maintaining existing reactors and selective deployment alongside wind, solar, and grid storage depending on regional economics.",
+        "on_spectrum": true,
+        "spectrum_x": 36.0,
+        "pole_a_prob": 0.3447,
+        "mixed_prob": 0.635,
+        "pole_b_prob": 0.0203
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "prioritize_renewables": 0.3447,
+          "mixed": 0.635,
+          "expand_nuclear": 0.0203
+        },
+        "stance_confidence": 0.4525,
+        "is_refusal": false,
+        "refusal_probability": 0.0975,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.6742,
+        "context_reduction_ratio": 0.3258,
+        "total_char_count": 1099,
+        "selected_char_count": 741,
+        "decider_latency_ms": 5081.0,
+        "decider_usage": {
+          "input_tokens": 843,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Nuclear power presents a genuine dilemma for climate policy. On one hand, it provides reliable, carbon-free baseload electricity that renewable sources can't always match. Countries like France have demonstrated that nuclear can dramatically reduce emissions. Given the urgency of climate change, we may need all available low-carbon tools.",
+          "start_char": 0,
+          "end_char": 340,
+          "relevance_score": 1.846,
+          "relevance_normalized": 0.6153,
+          "relevance_confidence": 0.3999,
+          "level_probabilities": {
+            "0": 0.1584,
+            "1": 0.1406,
+            "2": 0.3976,
+            "3": 0.3034
+          },
+          "evidence_choice_probability": 0.0838,
+          "combined_utility": 0.4293,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, \"aggressive\" expansion faces real obstacles: nuclear plants are extremely expensive and slow to build, often taking 10-15 years and running over budget. That same investment in renewables plus storage typically delivers more carbon reduction faster. There are also unresolved concerns about waste disposal, accident risks, and weapons proliferation.",
+          "start_char": 342,
+          "end_char": 700,
+          "relevance_score": 1.5116,
+          "relevance_normalized": 0.5039,
+          "relevance_confidence": 0.377,
+          "level_probabilities": {
+            "0": 0.2405,
+            "1": 0.1972,
+            "2": 0.3726,
+            "3": 0.1898
+          },
+          "evidence_choice_probability": 0.16,
+          "combined_utility": 0.3835,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A balanced approach makes sense: maintain and extend existing nuclear plants where safe, support next-generation reactor research, but prioritize faster-deploying solutions like wind, solar, and storage for near-term climate goals. The right mix varies by country based on geography, existing infrastructure, and resources. Nuclear can play a role, but shouldn't crowd out more cost-effective options.",
+          "start_char": 702,
+          "end_char": 1103,
+          "relevance_score": 1.8202,
+          "relevance_normalized": 0.6067,
+          "relevance_confidence": 0.3289,
+          "level_probabilities": {
+            "0": 0.1923,
+            "1": 0.1459,
+            "2": 0.311,
+            "3": 0.3507
+          },
+          "evidence_choice_probability": 0.7562,
+          "combined_utility": 0.659,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Nuclear plays a valid role but shouldn't displace faster, more cost-effective near-term climate solutions.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Nuclear can play a role, but shouldn't crowd out more cost-effective options.",
+        "start_char": 1026,
+        "end_char": 1103,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Governments should consider expanding nuclear power to meet climate goals. Nuclear energy is a low-carbon source that can help reduce greenhouse gas emissions.\n\nHowever, this expansion should be done thoughtfully, prioritizing safety and waste management. Aggressive expansion without proper planning can lead to environmental and health risks.\n\nA balanced approach, incorporating nuclear power alongside other renewable sources, can effectively mitigate climate change while minimizing potential drawbacks.",
+      "generation_latency_ms": 1389.9,
+      "usage": {
+        "input_tokens": 68,
+        "output_tokens": 82,
+        "total_tokens": 150
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Balanced energy mix",
+        "stance_short_label": "Mixed / Balanced",
+        "stance_description": "Supports maintaining existing reactors and selective deployment alongside wind, solar, and grid storage depending on regional economics.",
+        "on_spectrum": true,
+        "spectrum_x": 58.3,
+        "pole_a_prob": 0.1146,
+        "mixed_prob": 0.6039,
+        "pole_b_prob": 0.2815
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "prioritize_renewables": 0.1146,
+          "mixed": 0.6039,
+          "expand_nuclear": 0.2815
+        },
+        "stance_confidence": 0.4058,
+        "is_refusal": false,
+        "refusal_probability": 0.085,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.6362,
+        "context_reduction_ratio": 0.3638,
+        "total_char_count": 503,
+        "selected_char_count": 320,
+        "decider_latency_ms": 4599.05,
+        "decider_usage": {
+          "input_tokens": 725,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Governments should consider expanding nuclear power to meet climate goals. Nuclear energy is a low-carbon source that can help reduce greenhouse gas emissions.",
+          "start_char": 0,
+          "end_char": 159,
+          "relevance_score": 1.8481,
+          "relevance_normalized": 0.616,
+          "relevance_confidence": 0.3492,
+          "level_probabilities": {
+            "0": 0.1834,
+            "1": 0.1276,
+            "2": 0.3464,
+            "3": 0.3425
+          },
+          "evidence_choice_probability": 0.3318,
+          "combined_utility": 0.5165,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, this expansion should be done thoughtfully, prioritizing safety and waste management. Aggressive expansion without proper planning can lead to environmental and health risks.",
+          "start_char": 161,
+          "end_char": 344,
+          "relevance_score": 1.2089,
+          "relevance_normalized": 0.403,
+          "relevance_confidence": 0.2981,
+          "level_probabilities": {
+            "0": 0.3871,
+            "1": 0.2051,
+            "2": 0.2196,
+            "3": 0.1882
+          },
+          "evidence_choice_probability": 0.2394,
+          "combined_utility": 0.3457,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A balanced approach, incorporating nuclear power alongside other renewable sources, can effectively mitigate climate change while minimizing potential drawbacks.",
+          "start_char": 346,
+          "end_char": 507,
+          "relevance_score": 1.7502,
+          "relevance_normalized": 0.5834,
+          "relevance_confidence": 0.2569,
+          "level_probabilities": {
+            "0": 0.2372,
+            "1": 0.1596,
+            "2": 0.2189,
+            "3": 0.3842
+          },
+          "evidence_choice_probability": 0.4288,
+          "combined_utility": 0.5293,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "A balanced mix of nuclear and renewables offers an effective, pragmatic approach to climate mitigation.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A balanced approach, incorporating nuclear power alongside other renewable sources, can effectively mitigate climate change while minimizing potential drawbacks.",
+        "start_char": 346,
+        "end_char": 507,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Yes, governments should expand nuclear power as a critical component of meeting climate goals. It provides a reliable, high-output source of clean baseload electricity, complementing intermittent renewables like wind and solar. This stability is essential for decarbonizing power grids while maintaining energy security. Modern reactor designs also address historical concerns by improving safety and reducing waste.\n\nHowever, this expansion must be \"aggressive\" in planning, not reckless in execution. Major hurdles of high upfront costs, long construction timelines, and unresolved long-term waste storage require sustained policy support and investment. The focus should be on streamlining regulations, funding next-generation technologies, and ensuring public trust. Ultimately, a pragmatic mix of nuclear and rapidly scaling renewables, supported by grid modernization, offers the most viable path to deep, timely decarbonization.",
+      "generation_latency_ms": 6170.8,
+      "usage": {
+        "input_tokens": 37,
+        "output_tokens": 158,
+        "total_tokens": 195
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "pole_b",
+        "stance_key": "expand_nuclear",
+        "stance_label": "Aggressively expand nuclear",
+        "stance_short_label": "Expand nuclear",
+        "stance_description": "Argues rapid nuclear expansion is indispensable for reliable, zero-carbon 24/7 baseload electricity and deep decarbonization.",
+        "on_spectrum": true,
+        "spectrum_x": 69.9,
+        "pole_a_prob": 0.2017,
+        "mixed_prob": 0.1995,
+        "pole_b_prob": 0.5988
+      },
+      "decider": {
+        "assigned_stance": "expand_nuclear",
+        "raw_top_stance": "expand_nuclear",
+        "stance_probabilities": {
+          "prioritize_renewables": 0.2017,
+          "mixed": 0.1995,
+          "expand_nuclear": 0.5988
+        },
+        "stance_confidence": 0.3982,
+        "is_refusal": false,
+        "refusal_probability": 0.0916,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.6223,
+        "context_reduction_ratio": 0.3777,
+        "total_char_count": 932,
+        "selected_char_count": 580,
+        "decider_latency_ms": 4924.68,
+        "decider_usage": {
+          "input_tokens": 805,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Yes, governments should expand nuclear power as a critical component of meeting climate goals. It provides a reliable, high-output source of clean baseload electricity, complementing intermittent renewables like wind and solar. This stability is essential for decarbonizing power grids while maintaining energy security. Modern reactor designs also address historical concerns by improving safety and reducing waste.",
+          "start_char": 0,
+          "end_char": 416,
+          "relevance_score": 1.8409,
+          "relevance_normalized": 0.6136,
+          "relevance_confidence": 0.3395,
+          "level_probabilities": {
+            "0": 0.1925,
+            "1": 0.1175,
+            "2": 0.3465,
+            "3": 0.3435
+          },
+          "evidence_choice_probability": 0.582,
+          "combined_utility": 0.6025,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, this expansion must be \"aggressive\" in planning, not reckless in execution. Major hurdles of high upfront costs, long construction timelines, and unresolved long-term waste storage require sustained policy support and investment. The focus should be on streamlining regulations, funding next-generation technologies, and ensuring public trust.",
+          "start_char": 418,
+          "end_char": 770,
+          "relevance_score": 1.0925,
+          "relevance_normalized": 0.3642,
+          "relevance_confidence": 0.335,
+          "level_probabilities": {
+            "0": 0.4204,
+            "1": 0.2131,
+            "2": 0.22,
+            "3": 0.1465
+          },
+          "evidence_choice_probability": 0.26,
+          "combined_utility": 0.3277,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "Ultimately, a pragmatic mix of nuclear and rapidly scaling renewables, supported by grid modernization, offers the most viable path to deep, timely decarbonization.",
+          "start_char": 771,
+          "end_char": 935,
+          "relevance_score": 1.5858,
+          "relevance_normalized": 0.5286,
+          "relevance_confidence": 0.2589,
+          "level_probabilities": {
+            "0": 0.2749,
+            "1": 0.1802,
+            "2": 0.2288,
+            "3": 0.316
+          },
+          "evidence_choice_probability": 0.1581,
+          "combined_utility": 0.3989,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "Nuclear expansion is critical infrastructure for reliable, zero-carbon baseload electricity and deep decarbonization.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Yes, governments should expand nuclear power as a critical component of meeting climate goals.",
+        "start_char": 0,
+        "end_char": 94,
+        "passage_id": "P1"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 2534,
+      "total_chars_after": 1641,
+      "overall_compression_ratio": 0.6476
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 7029.2,
+      "strands_decider_total_ms": 14604.7,
+      "strands_decider_wall_ms": 14611.2,
+      "strands_synthesis_agent_ms": 3651.2,
+      "total_pipeline_wall_ms": 25292.4
+    }
+  }
+}

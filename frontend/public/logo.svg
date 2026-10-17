@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="spectrumBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <!-- Editorial Ink Background -->
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="#141413" stroke="#2E2C28" stroke-width="2"/>
+  <!-- Tilted Top Crossbar of the T (The "Tilt" Spectrum) -->
+  <g transform="rotate(-8 64 42)">
+    <rect x="20" y="34" width="88" height="16" rx="8" fill="url(#spectrumBar)"/>
+    <circle cx="32" cy="42" r="4.5" fill="#FAF6F0"/>
+    <circle cx="64" cy="42" r="4.5" fill="#FAF6F0"/>
+    <circle cx="96" cy="42" r="4.5" fill="#FAF6F0"/>
+  </g>
+  <!-- Vertical Stem + Fulcrum of the T -->
+  <rect x="54" y="50" width="20" height="48" rx="6" fill="#FAF6F0"/>
+  <polygon points="64,45 52,57 76,57" fill="#C83E2B"/>
+  <!-- Serif Base -->
+  <rect x="42" y="92" width="44" height="8" rx="4" fill="#FAF6F0"/>
+</svg>

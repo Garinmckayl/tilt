@@ -1,0 +1,719 @@
+{
+  "evaluated_at": "2026-10-16T18:11:28Z",
+  "decider_health": {
+    "status": "ok",
+    "model": "strands-decider-2B-qwen3.5-v1-2610",
+    "checkpoint": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "base_model": "Qwen/Qwen3.5-2B-Base",
+    "num_slots": 24,
+    "max_length": 4096,
+    "temperature": 1.0545210242263665,
+    "device": "cpu",
+    "prefix_cache": true,
+    "lora_merged": true,
+    "amx_bf16": true
+  },
+  "thresholds": {
+    "refusal_prob_threshold": 0.75,
+    "stance_confidence_threshold": 0.35,
+    "min_evidence_relevance_threshold": 1.45,
+    "mixed_margin_threshold": 0.08,
+    "passage_relevance_threshold": 1.5,
+    "max_selected_passages": 2,
+    "min_selected_passages": 1
+  },
+  "metrics": {
+    "total_examples": 13,
+    "stance_accuracy": 1.0,
+    "stance_correct": 13,
+    "refusal_accuracy": 1.0,
+    "refusal_correct": 13,
+    "passage_selection_precision": 1.0,
+    "passage_selection_recall": 0.9444,
+    "passage_selection_f1": 0.9714,
+    "primary_evidence_hit_rate": 1.0,
+    "mean_context_reduction_ratio": 0.3401
+  },
+  "latency_ms": {
+    "single_question_p50_ms": 1036.84,
+    "single_question_mean_ms": 1053.31,
+    "multi_question_shared_prefix_p50_ms": 4487.12,
+    "multi_question_shared_prefix_mean_ms": 3846.95,
+    "multi_question_shared_prefix_min_ms": 2151.24,
+    "multi_question_shared_prefix_max_ms": 5096.54,
+    "questions_per_batch_avg": 7
+  },
+  "threshold_sweep": [
+    {
+      "stance_confidence_threshold": 0.1,
+      "stance_only_accuracy": 0.8462,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.2,
+      "stance_only_accuracy": 0.8462,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.25,
+      "stance_only_accuracy": 0.9231,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.3,
+      "stance_only_accuracy": 0.9231,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.35,
+      "stance_only_accuracy": 0.9231,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.45,
+      "stance_only_accuracy": 0.9231,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    },
+    {
+      "stance_confidence_threshold": 0.55,
+      "stance_only_accuracy": 0.9231,
+      "joint_evidence_gated_accuracy": 1.0,
+      "correct_joint": 13,
+      "total": 13
+    }
+  ],
+  "cases": [
+    {
+      "id": "eval-01-smartphones-supports",
+      "topic": "Should schools ban smartphones?",
+      "gold_stance": "supports_ban",
+      "predicted_stance": "supports_ban",
+      "raw_top_stance": "supports_ban",
+      "stance_confidence": 0.6481,
+      "stance_probabilities": {
+        "opposes_ban": 0.0825,
+        "mixed": 0.1521,
+        "supports_ban": 0.7654
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0913,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.4972,
+      "passage_scores": {
+        "P1": {
+          "score": 1.0565,
+          "evidence_prob": 0.0149,
+          "utility": 0.2341
+        },
+        "P2": {
+          "score": 1.9434,
+          "evidence_prob": 0.5422,
+          "utility": 0.6108
+        },
+        "P3": {
+          "score": 1.8015,
+          "evidence_prob": 0.4135,
+          "utility": 0.5351
+        },
+        "P4": {
+          "score": 1.1127,
+          "evidence_prob": 0.0293,
+          "utility": 0.2513
+        }
+      },
+      "latency_ms": 4502.01,
+      "input_tokens": 857
+    },
+    {
+      "id": "eval-02-smartphones-opposes",
+      "topic": "Should schools ban smartphones?",
+      "gold_stance": "opposes_ban",
+      "predicted_stance": "opposes_ban",
+      "raw_top_stance": "opposes_ban",
+      "stance_confidence": 0.78,
+      "stance_probabilities": {
+        "opposes_ban": 0.8533,
+        "mixed": 0.1357,
+        "supports_ban": 0.011
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0865,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.3208,
+      "passage_scores": {
+        "P1": {
+          "score": 1.1492,
+          "evidence_prob": 0.0194,
+          "utility": 0.2558
+        },
+        "P2": {
+          "score": 2.1446,
+          "evidence_prob": 0.6843,
+          "utility": 0.7042
+        },
+        "P3": {
+          "score": 1.8355,
+          "evidence_prob": 0.2724,
+          "utility": 0.493
+        },
+        "P4": {
+          "score": 1.1625,
+          "evidence_prob": 0.0239,
+          "utility": 0.2602
+        }
+      },
+      "latency_ms": 4295.59,
+      "input_tokens": 809
+    },
+    {
+      "id": "eval-03-smartphones-mixed",
+      "topic": "Should schools ban smartphones?",
+      "gold_stance": "mixed",
+      "predicted_stance": "mixed",
+      "raw_top_stance": "mixed",
+      "stance_confidence": 0.5524,
+      "stance_probabilities": {
+        "opposes_ban": 0.2801,
+        "mixed": 0.7016,
+        "supports_ban": 0.0183
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0702,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.2928,
+      "passage_scores": {
+        "P1": {
+          "score": 1.236,
+          "evidence_prob": 0.0198,
+          "utility": 0.2747
+        },
+        "P2": {
+          "score": 1.9784,
+          "evidence_prob": 0.4871,
+          "utility": 0.5992
+        },
+        "P3": {
+          "score": 1.9036,
+          "evidence_prob": 0.4797,
+          "utility": 0.5803
+        },
+        "P4": {
+          "score": 0.9825,
+          "evidence_prob": 0.0134,
+          "utility": 0.2176
+        }
+      },
+      "latency_ms": 4263.05,
+      "input_tokens": 805
+    },
+    {
+      "id": "eval-04-ai-open-weights-supports",
+      "topic": "Should frontier AI model weights be openly released?",
+      "gold_stance": "open_weights",
+      "predicted_stance": "open_weights",
+      "raw_top_stance": "open_weights",
+      "stance_confidence": 0.946,
+      "stance_probabilities": {
+        "restrict_weights": 0.0089,
+        "mixed": 0.0271,
+        "open_weights": 0.964
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0977,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.2622,
+      "passage_scores": {
+        "P1": {
+          "score": 1.2756,
+          "evidence_prob": 0.0154,
+          "utility": 0.2818
+        },
+        "P2": {
+          "score": 2.1637,
+          "evidence_prob": 0.589,
+          "utility": 0.6749
+        },
+        "P3": {
+          "score": 1.9095,
+          "evidence_prob": 0.3677,
+          "utility": 0.5424
+        },
+        "P4": {
+          "score": 1.0003,
+          "evidence_prob": 0.0279,
+          "utility": 0.2265
+        }
+      },
+      "latency_ms": 4749.72,
+      "input_tokens": 822
+    },
+    {
+      "id": "eval-05-ai-open-weights-restrict",
+      "topic": "Should frontier AI model weights be openly released?",
+      "gold_stance": "restrict_weights",
+      "predicted_stance": "restrict_weights",
+      "raw_top_stance": "restrict_weights",
+      "stance_confidence": 0.8246,
+      "stance_probabilities": {
+        "restrict_weights": 0.8831,
+        "mixed": 0.0921,
+        "open_weights": 0.0248
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.1045,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.6224,
+      "passage_scores": {
+        "P1": {
+          "score": 1.111,
+          "evidence_prob": 0.0205,
+          "utility": 0.2479
+        },
+        "P2": {
+          "score": 1.8804,
+          "evidence_prob": 0.8773,
+          "utility": 0.7145
+        },
+        "P3": {
+          "score": 1.4539,
+          "evidence_prob": 0.0776,
+          "utility": 0.3422
+        },
+        "P4": {
+          "score": 1.0897,
+          "evidence_prob": 0.0247,
+          "utility": 0.2447
+        }
+      },
+      "latency_ms": 4819.73,
+      "input_tokens": 832
+    },
+    {
+      "id": "eval-06-remote-work-return",
+      "topic": "Should companies mandate a return to the office?",
+      "gold_stance": "supports_mandates",
+      "predicted_stance": "supports_mandates",
+      "raw_top_stance": "supports_mandates",
+      "stance_confidence": 0.8093,
+      "stance_probabilities": {
+        "remote_first": 0.0214,
+        "mixed": 0.1058,
+        "supports_mandates": 0.8729
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0956,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.2627,
+      "passage_scores": {
+        "P1": {
+          "score": 1.1489,
+          "evidence_prob": 0.0224,
+          "utility": 0.2568
+        },
+        "P2": {
+          "score": 1.9885,
+          "evidence_prob": 0.8409,
+          "utility": 0.7251
+        },
+        "P3": {
+          "score": 1.6194,
+          "evidence_prob": 0.1146,
+          "utility": 0.391
+        },
+        "P4": {
+          "score": 0.8836,
+          "evidence_prob": 0.022,
+          "utility": 0.1991
+        }
+      },
+      "latency_ms": 4502.04,
+      "input_tokens": 814
+    },
+    {
+      "id": "eval-07-remote-work-opposes",
+      "topic": "Should companies mandate a return to the office?",
+      "gold_stance": "remote_first",
+      "predicted_stance": "remote_first",
+      "raw_top_stance": "remote_first",
+      "stance_confidence": 0.5542,
+      "stance_probabilities": {
+        "remote_first": 0.7028,
+        "mixed": 0.2904,
+        "supports_mandates": 0.0068
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.1034,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.2798,
+      "passage_scores": {
+        "P1": {
+          "score": 1.2068,
+          "evidence_prob": 0.0133,
+          "utility": 0.2661
+        },
+        "P2": {
+          "score": 1.961,
+          "evidence_prob": 0.4939,
+          "utility": 0.5978
+        },
+        "P3": {
+          "score": 1.9034,
+          "evidence_prob": 0.4653,
+          "utility": 0.5753
+        },
+        "P4": {
+          "score": 1.1227,
+          "evidence_prob": 0.0275,
+          "utility": 0.2529
+        }
+      },
+      "latency_ms": 4492.62,
+      "input_tokens": 815
+    },
+    {
+      "id": "eval-08-nuclear-energy-supports",
+      "topic": "Should governments aggressively expand nuclear power to fight climate change?",
+      "gold_stance": "supports_nuclear",
+      "predicted_stance": "supports_nuclear",
+      "raw_top_stance": "supports_nuclear",
+      "stance_confidence": 0.9447,
+      "stance_probabilities": {
+        "opposes_nuclear": 0.0165,
+        "mixed": 0.0204,
+        "supports_nuclear": 0.9632
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0923,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P2",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.2733,
+      "passage_scores": {
+        "P1": {
+          "score": 1.2934,
+          "evidence_prob": 0.0134,
+          "utility": 0.2849
+        },
+        "P2": {
+          "score": 2.1687,
+          "evidence_prob": 0.8864,
+          "utility": 0.7801
+        },
+        "P3": {
+          "score": 1.785,
+          "evidence_prob": 0.0848,
+          "utility": 0.4164
+        },
+        "P4": {
+          "score": 1.1358,
+          "evidence_prob": 0.0155,
+          "utility": 0.2515
+        }
+      },
+      "latency_ms": 4487.12,
+      "input_tokens": 820
+    },
+    {
+      "id": "eval-09-ai-copyright-creators",
+      "topic": "Should training AI models on copyrighted works require explicit creator opt-in and payment?",
+      "gold_stance": "creator_consent",
+      "predicted_stance": "creator_consent",
+      "raw_top_stance": "creator_consent",
+      "stance_confidence": 0.9471,
+      "stance_probabilities": {
+        "fair_use": 0.0224,
+        "mixed": 0.0128,
+        "creator_consent": 0.9648
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.0982,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P2",
+        "P3"
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_passage_id": "P3",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.25,
+      "passage_scores": {
+        "P1": {
+          "score": 1.3376,
+          "evidence_prob": 0.0105,
+          "utility": 0.2935
+        },
+        "P2": {
+          "score": 2.1667,
+          "evidence_prob": 0.4653,
+          "utility": 0.6323
+        },
+        "P3": {
+          "score": 2.1264,
+          "evidence_prob": 0.5121,
+          "utility": 0.64
+        },
+        "P4": {
+          "score": 1.1492,
+          "evidence_prob": 0.012,
+          "utility": 0.2532
+        }
+      },
+      "latency_ms": 5096.54,
+      "input_tokens": 845
+    },
+    {
+      "id": "eval-10-refusal-case",
+      "topic": "Should governments abolish cash in favor of central bank digital currencies?",
+      "gold_stance": "refusal",
+      "predicted_stance": "refusal",
+      "raw_top_stance": "mixed",
+      "stance_confidence": 0.2495,
+      "stance_probabilities": {
+        "protect_cash": 0.3513,
+        "mixed": 0.4997,
+        "replace_with_cbdc": 0.149
+      },
+      "stance_correct": true,
+      "gold_is_refusal": true,
+      "predicted_is_refusal": true,
+      "refusal_probability": 0.8541,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P1"
+      ],
+      "selected_passage_ids": [
+        "P1"
+      ],
+      "primary_passage_id": "P1",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.0,
+      "passage_scores": {
+        "P1": {
+          "score": 1.2696,
+          "evidence_prob": 1.0,
+          "utility": 0.6251
+        }
+      },
+      "latency_ms": 2168.72,
+      "input_tokens": 377
+    },
+    {
+      "id": "eval-11-refusal-policy-case",
+      "topic": "Should social media platforms be banned for children under 16?",
+      "gold_stance": "refusal",
+      "predicted_stance": "refusal",
+      "raw_top_stance": "mixed",
+      "stance_confidence": 0.3678,
+      "stance_probabilities": {
+        "opposes_ban": 0.068,
+        "mixed": 0.5786,
+        "supports_ban": 0.3534
+      },
+      "stance_correct": true,
+      "gold_is_refusal": true,
+      "predicted_is_refusal": true,
+      "refusal_probability": 0.8165,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P1"
+      ],
+      "selected_passage_ids": [
+        "P1"
+      ],
+      "primary_passage_id": "P1",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.0,
+      "passage_scores": {
+        "P1": {
+          "score": 1.0801,
+          "evidence_prob": 1.0,
+          "utility": 0.584
+        }
+      },
+      "latency_ms": 2289.83,
+      "input_tokens": 384
+    },
+    {
+      "id": "eval-12-unclear-offtopic-case",
+      "topic": "Should cities ban private cars from downtown centers?",
+      "gold_stance": "unclear",
+      "predicted_stance": "unclear",
+      "raw_top_stance": "supports_car_ban",
+      "stance_confidence": 0.2471,
+      "stance_probabilities": {
+        "opposes_car_ban": 0.1536,
+        "mixed": 0.3483,
+        "supports_car_ban": 0.4981
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.2248,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P1"
+      ],
+      "selected_passage_ids": [
+        "P1"
+      ],
+      "primary_passage_id": "P1",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.0,
+      "passage_scores": {
+        "P1": {
+          "score": 1.1675,
+          "evidence_prob": 1.0,
+          "utility": 0.603
+        }
+      },
+      "latency_ms": 2151.24,
+      "input_tokens": 377
+    },
+    {
+      "id": "eval-13-unclear-vague-meta",
+      "topic": "Should governments tax AI-driven automation to fund displaced workers?",
+      "gold_stance": "unclear",
+      "predicted_stance": "unclear",
+      "raw_top_stance": "supports_robot_tax",
+      "stance_confidence": 0.6213,
+      "stance_probabilities": {
+        "opposes_robot_tax": 0.0627,
+        "mixed": 0.1898,
+        "supports_robot_tax": 0.7476
+      },
+      "stance_correct": true,
+      "gold_is_refusal": false,
+      "predicted_is_refusal": false,
+      "refusal_probability": 0.1525,
+      "refusal_correct": true,
+      "gold_relevant_passages": [
+        "P1"
+      ],
+      "selected_passage_ids": [
+        "P1"
+      ],
+      "primary_passage_id": "P1",
+      "primary_hit": true,
+      "context_reduction_ratio": 0.0,
+      "passage_scores": {
+        "P1": {
+          "score": 1.0593,
+          "evidence_prob": 1.0,
+          "utility": 0.5795
+        }
+      },
+      "latency_ms": 2192.08,
+      "input_tokens": 377
+    }
+  ]
+}

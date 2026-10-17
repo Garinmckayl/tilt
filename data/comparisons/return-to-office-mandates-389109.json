@@ -1,0 +1,525 @@
+{
+  "id": "return-to-office-mandates-389109",
+  "created_at": "2026-10-16T18:07:36.563560+00:00",
+  "cached": false,
+  "topic": {
+    "id": "return-to-office-mandates",
+    "question": "Should companies mandate a full return to the office?",
+    "short_title": "Return-to-office mandates",
+    "category": "Economics",
+    "is_curated": true,
+    "left_option": {
+      "key": "opposes_mandates",
+      "label": "Opposes RTO mandates",
+      "short_label": "Opposes mandates",
+      "description": "Argues against return-to-office mandates, favoring remote flexibility, employee autonomy, broader talent pools, and reduced commuting.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Structured hybrid",
+      "short_label": "Mixed / Hybrid",
+      "description": "Favors flexible hybrid schedules or team-level norms that combine focused remote days with intentional in-person collaboration.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "supports_mandates",
+      "label": "Supports RTO mandates",
+      "short_label": "Supports mandates",
+      "description": "Argues in-person office mandates improve mentorship, spontaneous collaboration, speed of execution, and company culture.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "opposes_mandates": "Opposes RTO mandates: Argues against return-to-office mandates, favoring remote flexibility, employee autonomy, broader talent pools, and reduced commuting.",
+      "mixed": "Structured hybrid: Favors flexible hybrid schedules or team-level norms that combine focused remote days with intentional in-person collaboration.",
+      "supports_mandates": "Supports RTO mandates: Argues in-person office mandates improve mentorship, spontaneous collaboration, speed of execution, and company culture."
+    }
+  },
+  "question": "Should companies mandate a full return to the office?",
+  "summary": {
+    "where_they_differ": "Claude emphasizes role-specific benefits of in-office time and outcome-focused management, while Llama and DeepSeek prioritize employee autonomy, work-life balance, and the risks of rigid mandates. All three endorse hybrid flexibility, but Claude frames it as conditional on business needs whereas the other two frame it as a default employee-centered principle.",
+    "headline_summary": "Hybrid consensus masks disagreement on mandate philosophy",
+    "agreement_level": "nuanced_split",
+    "unique_stance_count": 2
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "There's no one-size-fits-all answer—it depends on the company's specific needs and culture. Some roles genuinely benefit from in-person collaboration, spontaneous interactions, and mentorship opportunities that are harder to replicate remotely. For creative teams, early-career employees, or highly collaborative work, office time can add real value.\n\nHowever, mandating full-time office returns often backfires. Many employees have proven they can be productive remotely, and flexibility has become a key factor in job satisfaction and retention. Rigid mandates risk losing talented workers to more flexible competitors and can harm morale.\n\nThe most successful approach is typically hybrid: requiring in-office time for specific collaborative purposes while allowing flexibility for focused work. Companies should make decisions based on actual performance data and employee needs rather than assumptions about productivity or traditional norms. Trust and outcome-focused management matter more than physical location.",
+      "generation_latency_ms": 6521.1,
+      "usage": {
+        "input_tokens": 47,
+        "output_tokens": 191,
+        "total_tokens": 238
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Structured hybrid",
+        "stance_short_label": "Mixed / Hybrid",
+        "stance_description": "Favors flexible hybrid schedules or team-level norms that combine focused remote days with intentional in-person collaboration.",
+        "on_spectrum": true,
+        "spectrum_x": 36.0,
+        "pole_a_prob": 0.3603,
+        "mixed_prob": 0.6209,
+        "pole_b_prob": 0.0188
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_mandates": 0.3603,
+          "mixed": 0.6209,
+          "supports_mandates": 0.0188
+        },
+        "stance_confidence": 0.4313,
+        "is_refusal": false,
+        "refusal_probability": 0.0952,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.7156,
+        "context_reduction_ratio": 0.2844,
+        "total_char_count": 1016,
+        "selected_char_count": 727,
+        "decider_latency_ms": 4913.96,
+        "decider_usage": {
+          "input_tokens": 810,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "There's no one-size-fits-all answer—it depends on the company's specific needs and culture. Some roles genuinely benefit from in-person collaboration, spontaneous interactions, and mentorship opportunities that are harder to replicate remotely. For creative teams, early-career employees, or highly collaborative work, office time can add real value.",
+          "start_char": 0,
+          "end_char": 350,
+          "relevance_score": 1.8028,
+          "relevance_normalized": 0.6009,
+          "relevance_confidence": 0.3578,
+          "level_probabilities": {
+            "0": 0.1728,
+            "1": 0.1788,
+            "2": 0.321,
+            "3": 0.3273
+          },
+          "evidence_choice_probability": 0.1237,
+          "combined_utility": 0.4339,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, mandating full-time office returns often backfires. Many employees have proven they can be productive remotely, and flexibility has become a key factor in job satisfaction and retention. Rigid mandates risk losing talented workers to more flexible competitors and can harm morale.",
+          "start_char": 352,
+          "end_char": 641,
+          "relevance_score": 1.6941,
+          "relevance_normalized": 0.5647,
+          "relevance_confidence": 0.364,
+          "level_probabilities": {
+            "0": 0.1907,
+            "1": 0.1991,
+            "2": 0.3356,
+            "3": 0.2746
+          },
+          "evidence_choice_probability": 0.141,
+          "combined_utility": 0.4164,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "The most successful approach is typically hybrid: requiring in-office time for specific collaborative purposes while allowing flexibility for focused work. Companies should make decisions based on actual performance data and employee needs rather than assumptions about productivity or traditional norms. Trust and outcome-focused management matter more than physical location.",
+          "start_char": 643,
+          "end_char": 1020,
+          "relevance_score": 2.0081,
+          "relevance_normalized": 0.6694,
+          "relevance_confidence": 0.3503,
+          "level_probabilities": {
+            "0": 0.1429,
+            "1": 0.1562,
+            "2": 0.2508,
+            "3": 0.4501
+          },
+          "evidence_choice_probability": 0.7353,
+          "combined_utility": 0.6925,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "In-person collaboration benefits specific roles; hybrid decisions should follow performance data, not tradition.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "The most successful approach is typically hybrid: requiring in-office time for specific collaborative purposes while allowing flexibility for focused work.",
+        "start_char": 643,
+        "end_char": 798,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "No, companies should not mandate a full return to the office. This approach can be counterproductive and may lead to decreased employee satisfaction and productivity.\n\nA flexible work arrangement that allows employees to work from home or remotely can be more beneficial. It can improve work-life balance, reduce commuting time, and increase job satisfaction.\n\nUltimately, a hybrid approach that balances office work with remote work can be the most effective solution, allowing companies to accommodate different employee needs and preferences while maintaining collaboration and productivity.",
+      "generation_latency_ms": 1119.0,
+      "usage": {
+        "input_tokens": 67,
+        "output_tokens": 98,
+        "total_tokens": 165
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "pole_a",
+        "stance_key": "opposes_mandates",
+        "stance_label": "Opposes RTO mandates",
+        "stance_short_label": "Opposes mandates",
+        "stance_description": "Argues against return-to-office mandates, favoring remote flexibility, employee autonomy, broader talent pools, and reduced commuting.",
+        "on_spectrum": true,
+        "spectrum_x": 8.0,
+        "pole_a_prob": 0.8991,
+        "mixed_prob": 0.0854,
+        "pole_b_prob": 0.0155
+      },
+      "decider": {
+        "assigned_stance": "opposes_mandates",
+        "raw_top_stance": "opposes_mandates",
+        "stance_probabilities": {
+          "opposes_mandates": 0.8991,
+          "mixed": 0.0854,
+          "supports_mandates": 0.0155
+        },
+        "stance_confidence": 0.8487,
+        "is_refusal": false,
+        "refusal_probability": 0.1087,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P2",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P1"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.7186,
+        "context_reduction_ratio": 0.2814,
+        "total_char_count": 590,
+        "selected_char_count": 424,
+        "decider_latency_ms": 4609.28,
+        "decider_usage": {
+          "input_tokens": 737,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "No, companies should not mandate a full return to the office. This approach can be counterproductive and may lead to decreased employee satisfaction and productivity.",
+          "start_char": 0,
+          "end_char": 166,
+          "relevance_score": 1.9471,
+          "relevance_normalized": 0.649,
+          "relevance_confidence": 0.3559,
+          "level_probabilities": {
+            "0": 0.1585,
+            "1": 0.1342,
+            "2": 0.309,
+            "3": 0.3983
+          },
+          "evidence_choice_probability": 0.1379,
+          "combined_utility": 0.4701,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "A flexible work arrangement that allows employees to work from home or remotely can be more beneficial. It can improve work-life balance, reduce commuting time, and increase job satisfaction.",
+          "start_char": 168,
+          "end_char": 359,
+          "relevance_score": 1.819,
+          "relevance_normalized": 0.6063,
+          "relevance_confidence": 0.4076,
+          "level_probabilities": {
+            "0": 0.1471,
+            "1": 0.1833,
+            "2": 0.3732,
+            "3": 0.2964
+          },
+          "evidence_choice_probability": 0.3081,
+          "combined_utility": 0.5019,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "Ultimately, a hybrid approach that balances office work with remote work can be the most effective solution, allowing companies to accommodate different employee needs and preferences while maintaining collaboration and productivity.",
+          "start_char": 361,
+          "end_char": 594,
+          "relevance_score": 1.9343,
+          "relevance_normalized": 0.6448,
+          "relevance_confidence": 0.3292,
+          "level_probabilities": {
+            "0": 0.1561,
+            "1": 0.1831,
+            "2": 0.2313,
+            "3": 0.4296
+          },
+          "evidence_choice_probability": 0.554,
+          "combined_utility": 0.613,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Flexible remote arrangements improve work-life balance and satisfaction; hybrid balances employee needs with collaboration.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A flexible work arrangement that allows employees to work from home or remotely can be more beneficial.",
+        "start_char": 168,
+        "end_char": 271,
+        "passage_id": "P2"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Companies should not universally mandate a full return to the office. The pandemic proved that many roles can be performed effectively remotely, and a rigid mandate risks alienating employees who have come to value the flexibility and improved work-life balance of hybrid or remote models. Forcing a full return can also lead to a talent drain, as skilled workers may seek employers offering more adaptable arrangements, and it ignores the diverse personal circumstances of a modern workforce.\n\nInstead, companies should adopt a more nuanced, role-specific approach. Mandates may be justified for positions requiring intensive collaboration, specialized equipment, or in-person services. However, for many knowledge workers, a flexible hybrid policy often yields the best results, balancing team cohesion with individual autonomy. Ultimately, the goal should be to foster productivity and engagement, not merely physical presence. A one-size-fits-all mandate is an outdated solution that fails to leverage the lessons learned about work in the 21st century.",
+      "generation_latency_ms": 4124.5,
+      "usage": {
+        "input_tokens": 36,
+        "output_tokens": 187,
+        "total_tokens": 223
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "pole_a",
+        "stance_key": "opposes_mandates",
+        "stance_label": "Opposes RTO mandates",
+        "stance_short_label": "Opposes mandates",
+        "stance_description": "Argues against return-to-office mandates, favoring remote flexibility, employee autonomy, broader talent pools, and reduced commuting.",
+        "on_spectrum": true,
+        "spectrum_x": 15.5,
+        "pole_a_prob": 0.7597,
+        "mixed_prob": 0.2297,
+        "pole_b_prob": 0.0105
+      },
+      "decider": {
+        "assigned_stance": "opposes_mandates",
+        "raw_top_stance": "opposes_mandates",
+        "stance_probabilities": {
+          "opposes_mandates": 0.7597,
+          "mixed": 0.2297,
+          "supports_mandates": 0.0105
+        },
+        "stance_confidence": 0.6396,
+        "is_refusal": false,
+        "refusal_probability": 0.1139,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P4"
+        ],
+        "pruned_passage_ids": [
+          "P2",
+          "P3"
+        ],
+        "primary_evidence_passage_id": "P1",
+        "context_compression_ratio": 0.4891,
+        "context_reduction_ratio": 0.5109,
+        "total_char_count": 1053,
+        "selected_char_count": 515,
+        "decider_latency_ms": 5270.4,
+        "decider_usage": {
+          "input_tokens": 942,
+          "output_tokens": 7
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Companies should not universally mandate a full return to the office. The pandemic proved that many roles can be performed effectively remotely, and a rigid mandate risks alienating employees who have come to value the flexibility and improved work-life balance of hybrid or remote models.",
+          "start_char": 0,
+          "end_char": 289,
+          "relevance_score": 2.1144,
+          "relevance_normalized": 0.7048,
+          "relevance_confidence": 0.4222,
+          "level_probabilities": {
+            "0": 0.1099,
+            "1": 0.1198,
+            "2": 0.3162,
+            "3": 0.4541
+          },
+          "evidence_choice_probability": 0.3495,
+          "combined_utility": 0.5804,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "Forcing a full return can also lead to a talent drain, as skilled workers may seek employers offering more adaptable arrangements, and it ignores the diverse personal circumstances of a modern workforce.",
+          "start_char": 290,
+          "end_char": 493,
+          "relevance_score": 1.7233,
+          "relevance_normalized": 0.5744,
+          "relevance_confidence": 0.4068,
+          "level_probabilities": {
+            "0": 0.1593,
+            "1": 0.2173,
+            "2": 0.3642,
+            "3": 0.2592
+          },
+          "evidence_choice_probability": 0.0862,
+          "combined_utility": 0.4035,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "Instead, companies should adopt a more nuanced, role-specific approach. Mandates may be justified for positions requiring intensive collaboration, specialized equipment, or in-person services. However, for many knowledge workers, a flexible hybrid policy often yields the best results, balancing team cohesion with individual autonomy.",
+          "start_char": 495,
+          "end_char": 830,
+          "relevance_score": 1.9867,
+          "relevance_normalized": 0.6622,
+          "relevance_confidence": 0.3577,
+          "level_probabilities": {
+            "0": 0.1488,
+            "1": 0.1399,
+            "2": 0.2871,
+            "3": 0.4242
+          },
+          "evidence_choice_probability": 0.1757,
+          "combined_utility": 0.4919,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P4",
+          "number": 4,
+          "text": "Ultimately, the goal should be to foster productivity and engagement, not merely physical presence. A one-size-fits-all mandate is an outdated solution that fails to leverage the lessons learned about work in the 21st century.",
+          "start_char": 831,
+          "end_char": 1057,
+          "relevance_score": 2.0294,
+          "relevance_normalized": 0.6765,
+          "relevance_confidence": 0.342,
+          "level_probabilities": {
+            "0": 0.1441,
+            "1": 0.1531,
+            "2": 0.2322,
+            "3": 0.4707
+          },
+          "evidence_choice_probability": 0.3886,
+          "combined_utility": 0.5757,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P4"
+      ],
+      "primary_evidence_passage_id": "P1",
+      "framing_explanation": "Full office mandates are outdated and risk alienating employees; pandemic proved remote effectiveness across many roles.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Companies should not universally mandate a full return to the office.",
+        "start_char": 0,
+        "end_char": 69,
+        "passage_id": "P1"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 2659,
+      "total_chars_after": 1666,
+      "overall_compression_ratio": 0.6266
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 6526.1,
+      "strands_decider_total_ms": 14793.6,
+      "strands_decider_wall_ms": 14800.4,
+      "strands_synthesis_agent_ms": 4017.8,
+      "total_pipeline_wall_ms": 25345.1
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "id": "open-source-frontier-ai-db7d3b",
+  "created_at": "2026-10-16T18:06:19.152139+00:00",
+  "cached": false,
+  "topic": {
+    "id": "open-source-frontier-ai",
+    "question": "Should frontier AI model weights be openly released?",
+    "short_title": "Open-weight frontier AI",
+    "category": "Technology",
+    "is_curated": true,
+    "left_option": {
+      "key": "restrict_weights",
+      "label": "Restrict weight release",
+      "short_label": "Restrict weights",
+      "description": "Argues frontier model weights should remain closed or gated because open weight proliferation is irreversible and enables misuse.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Tiered / gated release",
+      "short_label": "Mixed / Tiered",
+      "description": "Favors staged or capability-thresholded release subject to safety evaluations rather than unconditional open or closed policies.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "open_weights",
+      "label": "Openly release weights",
+      "short_label": "Openly release",
+      "description": "Argues frontier AI weights should be openly published to prevent corporate monopoly, enable independent auditing, and accelerate science.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "restrict_weights": "Restrict weight release: Argues frontier model weights should remain closed or gated because open weight proliferation is irreversible and enables misuse.",
+      "mixed": "Tiered / gated release: Favors staged or capability-thresholded release subject to safety evaluations rather than unconditional open or closed policies.",
+      "open_weights": "Openly release weights: Argues frontier AI weights should be openly published to prevent corporate monopoly, enable independent auditing, and accelerate science."
+    }
+  },
+  "question": "Should frontier AI model weights be openly released?",
+  "summary": {
+    "where_they_differ": "Claude and Llama emphasize research acceleration and democratization benefits alongside risk management, while DeepSeek prioritizes irreversibility and existential risk as the dominant constraint on staged release. DeepSeek frames gating as a governance necessity given immature safeguards; the others frame it as a calibration tool that can evolve as understanding improves.",
+    "headline_summary": "All three favor gating, but diverge on urgency of risk",
+    "agreement_level": "broad_agreement",
+    "unique_stance_count": 1
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "This is a nuanced issue with legitimate concerns on both sides. Open release of frontier AI models can accelerate beneficial research, enable independent safety audits, and democratize access to powerful technology. It prevents dangerous concentration of power and allows the broader scientific community to identify and fix vulnerabilities.\n\nHowever, openly releasing the most capable AI systems creates serious risks. Bad actors could remove safety guardrails, use models for sophisticated cyberattacks, create convincing disinformation at scale, or develop biological or chemical weapons. Unlike open-source software, AI model weights can't be \"patched\" once released—they're out permanently.\n\nA middle path might be most prudent: open release for models below certain capability thresholds, with structured access (via APIs with safety measures) for frontier systems. As we better understand AI risks and develop robust safeguards, we can adjust this balance. The key is matching openness levels to our ability to manage the risks involved.",
+      "generation_latency_ms": 6702.2,
+      "usage": {
+        "input_tokens": 46,
+        "output_tokens": 203,
+        "total_tokens": 249
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Tiered / gated release",
+        "stance_short_label": "Mixed / Tiered",
+        "stance_description": "Favors staged or capability-thresholded release subject to safety evaluations rather than unconditional open or closed policies.",
+        "on_spectrum": true,
+        "spectrum_x": 48.1,
+        "pole_a_prob": 0.06,
+        "mixed_prob": 0.9181,
+        "pole_b_prob": 0.0218
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "restrict_weights": 0.06,
+          "mixed": 0.9181,
+          "open_weights": 0.0218
+        },
+        "stance_confidence": 0.8772,
+        "is_refusal": false,
+        "refusal_probability": 0.082,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.6615,
+        "context_reduction_ratio": 0.3385,
+        "total_char_count": 1040,
+        "selected_char_count": 688,
+        "decider_latency_ms": 4925.56,
+        "decider_usage": {
+          "input_tokens": 814,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "This is a nuanced issue with legitimate concerns on both sides. Open release of frontier AI models can accelerate beneficial research, enable independent safety audits, and democratize access to powerful technology. It prevents dangerous concentration of power and allows the broader scientific community to identify and fix vulnerabilities.",
+          "start_char": 0,
+          "end_char": 341,
+          "relevance_score": 1.8685,
+          "relevance_normalized": 0.6228,
+          "relevance_confidence": 0.3469,
+          "level_probabilities": {
+            "0": 0.1755,
+            "1": 0.1412,
+            "2": 0.3225,
+            "3": 0.3607
+          },
+          "evidence_choice_probability": 0.1,
+          "combined_utility": 0.4398,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, openly releasing the most capable AI systems creates serious risks. Bad actors could remove safety guardrails, use models for sophisticated cyberattacks, create convincing disinformation at scale, or develop biological or chemical weapons. Unlike open-source software, AI model weights can't be \"patched\" once released—they're out permanently.",
+          "start_char": 343,
+          "end_char": 695,
+          "relevance_score": 1.6392,
+          "relevance_normalized": 0.5464,
+          "relevance_confidence": 0.4048,
+          "level_probabilities": {
+            "0": 0.1819,
+            "1": 0.2207,
+            "2": 0.3735,
+            "3": 0.2238
+          },
+          "evidence_choice_probability": 0.1992,
+          "combined_utility": 0.4249,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A middle path might be most prudent: open release for models below certain capability thresholds, with structured access (via APIs with safety measures) for frontier systems. As we better understand AI risks and develop robust safeguards, we can adjust this balance. The key is matching openness levels to our ability to manage the risks involved.",
+          "start_char": 697,
+          "end_char": 1044,
+          "relevance_score": 1.8539,
+          "relevance_normalized": 0.618,
+          "relevance_confidence": 0.3072,
+          "level_probabilities": {
+            "0": 0.1913,
+            "1": 0.1555,
+            "2": 0.2613,
+            "3": 0.3919
+          },
+          "evidence_choice_probability": 0.7007,
+          "combined_utility": 0.6469,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Tiered release balances democratization and auditing benefits against risks by matching openness to our evolving safety capabilities.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A middle path might be most prudent: open release for models below certain capability thresholds, with structured access (via APIs with safety measures) for frontier systems.",
+        "start_char": 697,
+        "end_char": 871,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Releasing frontier AI model weights openly can be beneficial for the research community, as it allows for collaboration and accelerates progress. It enables researchers to build upon existing models, reproduce results, and improve overall performance.\n\nHowever, open release also raises concerns about potential misuse, such as generating harmful content or exacerbating biases. Additionally, significant resources are invested in developing these models, and open release may not provide adequate protection for intellectual property.\n\nA balanced approach, such as controlled access or licensing, may be necessary to mitigate these risks while still promoting innovation and collaboration.",
+      "generation_latency_ms": 1439.8,
+      "usage": {
+        "input_tokens": 66,
+        "output_tokens": 112,
+        "total_tokens": 178
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Tiered / gated release",
+        "stance_short_label": "Mixed / Tiered",
+        "stance_description": "Favors staged or capability-thresholded release subject to safety evaluations rather than unconditional open or closed policies.",
+        "on_spectrum": true,
+        "spectrum_x": 55.6,
+        "pole_a_prob": 0.0313,
+        "mixed_prob": 0.9104,
+        "pole_b_prob": 0.0583
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "restrict_weights": 0.0313,
+          "mixed": 0.9104,
+          "open_weights": 0.0583
+        },
+        "stance_confidence": 0.8656,
+        "is_refusal": false,
+        "refusal_probability": 0.0791,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.5889,
+        "context_reduction_ratio": 0.4111,
+        "total_char_count": 686,
+        "selected_char_count": 404,
+        "decider_latency_ms": 4674.36,
+        "decider_usage": {
+          "input_tokens": 744,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Releasing frontier AI model weights openly can be beneficial for the research community, as it allows for collaboration and accelerates progress. It enables researchers to build upon existing models, reproduce results, and improve overall performance.",
+          "start_char": 0,
+          "end_char": 251,
+          "relevance_score": 1.7767,
+          "relevance_normalized": 0.5922,
+          "relevance_confidence": 0.3477,
+          "level_probabilities": {
+            "0": 0.195,
+            "1": 0.1439,
+            "2": 0.3505,
+            "3": 0.3106
+          },
+          "evidence_choice_probability": 0.115,
+          "combined_utility": 0.4252,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, open release also raises concerns about potential misuse, such as generating harmful content or exacerbating biases. Additionally, significant resources are invested in developing these models, and open release may not provide adequate protection for intellectual property.",
+          "start_char": 253,
+          "end_char": 535,
+          "relevance_score": 1.4469,
+          "relevance_normalized": 0.4823,
+          "relevance_confidence": 0.3396,
+          "level_probabilities": {
+            "0": 0.2705,
+            "1": 0.2208,
+            "2": 0.3,
+            "3": 0.2087
+          },
+          "evidence_choice_probability": 0.1181,
+          "combined_utility": 0.3548,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A balanced approach, such as controlled access or licensing, may be necessary to mitigate these risks while still promoting innovation and collaboration.",
+          "start_char": 537,
+          "end_char": 690,
+          "relevance_score": 1.5985,
+          "relevance_normalized": 0.5328,
+          "relevance_confidence": 0.2902,
+          "level_probabilities": {
+            "0": 0.2526,
+            "1": 0.1921,
+            "2": 0.2594,
+            "3": 0.2959
+          },
+          "evidence_choice_probability": 0.7669,
+          "combined_utility": 0.6147,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Controlled access preserves research collaboration and innovation while mitigating unspecified risks through licensing frameworks.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A balanced approach, such as controlled access or licensing, may be necessary to mitigate these risks while still promoting innovation and collaboration.",
+        "start_char": 537,
+        "end_char": 690,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Openly releasing frontier AI model weights presents a profound dilemma. Proponents argue it democratizes access, fostering rapid innovation, independent safety audits, and public scrutiny that can counter corporate concentration of power. This openness could accelerate beneficial applications in science, education, and small-scale entrepreneurship, preventing a future where only a few entities control transformative technology.\n\nHowever, the risks are severe and potentially irreversible. Unrestricted access eliminates critical points of control, making it extraordinarily difficult to prevent malicious use for creating cyberweapons, disinformation, or autonomous harmful agents. Furthermore, once released, the weights cannot be recalled, and our current technical ability to align or control such powerful models remains incomplete. Therefore, a cautious, staged approach is essential. Weights might be shared under strict, vetted frameworks with robust safeguards, but a full, unconditional open release of the most capable models is currently irresponsible given the existential stakes and our immature governance ecosystem.",
+      "generation_latency_ms": 3587.4,
+      "usage": {
+        "input_tokens": 35,
+        "output_tokens": 186,
+        "total_tokens": 221
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Tiered / gated release",
+        "stance_short_label": "Mixed / Tiered",
+        "stance_description": "Favors staged or capability-thresholded release subject to safety evaluations rather than unconditional open or closed policies.",
+        "on_spectrum": true,
+        "spectrum_x": 37.4,
+        "pole_a_prob": 0.2682,
+        "mixed_prob": 0.7158,
+        "pole_b_prob": 0.016
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "restrict_weights": 0.2682,
+          "mixed": 0.7158,
+          "open_weights": 0.016
+        },
+        "stance_confidence": 0.5737,
+        "is_refusal": false,
+        "refusal_probability": 0.102,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P3",
+          "P4"
+        ],
+        "pruned_passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P4",
+        "context_compression_ratio": 0.6195,
+        "context_reduction_ratio": 0.3805,
+        "total_char_count": 1130,
+        "selected_char_count": 700,
+        "decider_latency_ms": 5214.76,
+        "decider_usage": {
+          "input_tokens": 931,
+          "output_tokens": 7
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Openly releasing frontier AI model weights presents a profound dilemma. Proponents argue it democratizes access, fostering rapid innovation, independent safety audits, and public scrutiny that can counter corporate concentration of power.",
+          "start_char": 0,
+          "end_char": 238,
+          "relevance_score": 1.8503,
+          "relevance_normalized": 0.6168,
+          "relevance_confidence": 0.3582,
+          "level_probabilities": {
+            "0": 0.1701,
+            "1": 0.1548,
+            "2": 0.33,
+            "3": 0.3452
+          },
+          "evidence_choice_probability": 0.0278,
+          "combined_utility": 0.4107,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "This openness could accelerate beneficial applications in science, education, and small-scale entrepreneurship, preventing a future where only a few entities control transformative technology.",
+          "start_char": 239,
+          "end_char": 431,
+          "relevance_score": 1.5153,
+          "relevance_normalized": 0.5051,
+          "relevance_confidence": 0.3876,
+          "level_probabilities": {
+            "0": 0.2113,
+            "1": 0.2678,
+            "2": 0.3151,
+            "3": 0.2058
+          },
+          "evidence_choice_probability": 0.017,
+          "combined_utility": 0.3343,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "However, the risks are severe and potentially irreversible. Unrestricted access eliminates critical points of control, making it extraordinarily difficult to prevent malicious use for creating cyberweapons, disinformation, or autonomous harmful agents. Furthermore, once released, the weights cannot be recalled, and our current technical ability to align or control such powerful models remains incomplete.",
+          "start_char": 433,
+          "end_char": 840,
+          "relevance_score": 1.7055,
+          "relevance_normalized": 0.5685,
+          "relevance_confidence": 0.3656,
+          "level_probabilities": {
+            "0": 0.1874,
+            "1": 0.1979,
+            "2": 0.3364,
+            "3": 0.2782
+          },
+          "evidence_choice_probability": 0.1186,
+          "combined_utility": 0.411,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P4",
+          "number": 4,
+          "text": "Therefore, a cautious, staged approach is essential. Weights might be shared under strict, vetted frameworks with robust safeguards, but a full, unconditional open release of the most capable models is currently irresponsible given the existential stakes and our immature governance ecosystem.",
+          "start_char": 841,
+          "end_char": 1134,
+          "relevance_score": 2.0656,
+          "relevance_normalized": 0.6885,
+          "relevance_confidence": 0.3247,
+          "level_probabilities": {
+            "0": 0.1543,
+            "1": 0.1288,
+            "2": 0.2139,
+            "3": 0.5029
+          },
+          "evidence_choice_probability": 0.8366,
+          "combined_utility": 0.7403,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P3",
+        "P4"
+      ],
+      "primary_evidence_passage_id": "P4",
+      "framing_explanation": "Staged release under strict vetted frameworks is essential because unrestricted access creates irreversible existential risks our governance cannot yet manage.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Therefore, a cautious, staged approach is essential. Weights might be shared under strict, vetted frameworks with robust safeguards, but a full, unconditional open release of the most capable models is currently irresponsible given the existential stakes and our immature governance ecosystem.",
+        "start_char": 841,
+        "end_char": 1134,
+        "passage_id": "P4"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 2856,
+      "total_chars_after": 1792,
+      "overall_compression_ratio": 0.6275
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 6709.0,
+      "strands_decider_total_ms": 14814.7,
+      "strands_decider_wall_ms": 14821.4,
+      "strands_synthesis_agent_ms": 4488.9,
+      "total_pipeline_wall_ms": 26020.3
+    }
+  }
+}

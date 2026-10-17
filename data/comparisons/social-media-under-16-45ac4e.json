@@ -1,0 +1,525 @@
+{
+  "id": "social-media-under-16-45ac4e",
+  "created_at": "2026-10-16T18:07:11.217312+00:00",
+  "cached": false,
+  "topic": {
+    "id": "social-media-under-16",
+    "question": "Should social media platforms be banned for children under 16?",
+    "short_title": "Under-16 social media ban",
+    "category": "Culture",
+    "is_curated": true,
+    "left_option": {
+      "key": "opposes_age_ban",
+      "label": "Opposes age ban",
+      "short_label": "Opposes age ban",
+      "description": "Argues blanket under-16 bans infringe youth expression, raise privacy risks from ID verification, and fail to fix platform design.",
+      "pole": "left"
+    },
+    "center_option": {
+      "key": "mixed",
+      "label": "Design rules & parental controls",
+      "short_label": "Mixed / Guardrails",
+      "description": "Favors regulating addictive algorithmic feeds, default privacy, and parental consent tools over a hard statutory ban.",
+      "pole": "center"
+    },
+    "right_option": {
+      "key": "supports_age_ban",
+      "label": "Supports under-16 ban",
+      "short_label": "Supports age ban",
+      "description": "Argues statutory minimum age bans are necessary to protect adolescent mental health from algorithmic social media harms.",
+      "pole": "right"
+    },
+    "stance_criteria": {
+      "opposes_age_ban": "Opposes age ban: Argues blanket under-16 bans infringe youth expression, raise privacy risks from ID verification, and fail to fix platform design.",
+      "mixed": "Design rules & parental controls: Favors regulating addictive algorithmic feeds, default privacy, and parental consent tools over a hard statutory ban.",
+      "supports_age_ban": "Supports under-16 ban: Argues statutory minimum age bans are necessary to protect adolescent mental health from algorithmic social media harms."
+    }
+  },
+  "question": "Should social media platforms be banned for children under 16?",
+  "summary": {
+    "where_they_differ": "Claude emphasizes research-backed harms and existing age restrictions as enforcement targets, while DeepSeek prioritizes specific regulatory mandates like default privacy settings and algorithmic feed bans. All three converge on rejecting blanket bans in favor of design-level and parental interventions, differing mainly in enforcement specificity rather than fundamental philosophy.",
+    "headline_summary": "Regulate design, not access: all three models agree",
+    "agreement_level": "broad_agreement",
+    "unique_stance_count": 1
+  },
+  "models": [
+    {
+      "slot_id": "claude-sonnet-4-5",
+      "display_name": "Claude Sonnet 4.5",
+      "short_name": "Claude",
+      "provider": "Anthropic",
+      "family": "claude",
+      "requested_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "actual_model_id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "This is a complex issue with valid concerns on both sides. There are legitimate reasons to restrict young people's social media access—research links heavy use to increased anxiety, depression, and sleep problems in adolescents. Cyberbullying, exposure to harmful content, and addictive design features pose real risks during critical developmental years. Some countries like Australia have moved toward such bans.\n\nHowever, outright bans may be overly blunt. Social media also offers benefits: connection with peers, access to support communities, creative expression, and educational resources. Many teens use these platforms responsibly. A ban might simply push usage underground, making it harder for parents to monitor, and could disadvantage young people from developing digital literacy skills they'll need as adults.\n\nA more nuanced approach might be better: stronger parental controls, age-appropriate platform design, digital literacy education, and enforcing existing age restrictions (currently 13 in many places) more effectively. The focus should be on safer use rather than complete prohibition.",
+      "generation_latency_ms": 6824.6,
+      "usage": {
+        "input_tokens": 49,
+        "output_tokens": 214,
+        "total_tokens": 263
+      },
+      "accent_color": "#C85A32",
+      "badge_bg": "#FDF3EE",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Design rules & parental controls",
+        "stance_short_label": "Mixed / Guardrails",
+        "stance_description": "Favors regulating addictive algorithmic feeds, default privacy, and parental consent tools over a hard statutory ban.",
+        "on_spectrum": true,
+        "spectrum_x": 54.9,
+        "pole_a_prob": 0.075,
+        "mixed_prob": 0.7521,
+        "pole_b_prob": 0.1729
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_age_ban": 0.075,
+          "mixed": 0.7521,
+          "supports_age_ban": 0.1729
+        },
+        "stance_confidence": 0.6281,
+        "is_refusal": false,
+        "refusal_probability": 0.0831,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P1",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.6311,
+        "context_reduction_ratio": 0.3689,
+        "total_char_count": 1106,
+        "selected_char_count": 698,
+        "decider_latency_ms": 5111.36,
+        "decider_usage": {
+          "input_tokens": 845,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "This is a complex issue with valid concerns on both sides. There are legitimate reasons to restrict young people's social media access—research links heavy use to increased anxiety, depression, and sleep problems in adolescents. Cyberbullying, exposure to harmful content, and addictive design features pose real risks during critical developmental years. Some countries like Australia have moved toward such bans.",
+          "start_char": 0,
+          "end_char": 414,
+          "relevance_score": 1.9125,
+          "relevance_normalized": 0.6375,
+          "relevance_confidence": 0.4605,
+          "level_probabilities": {
+            "0": 0.1246,
+            "1": 0.1296,
+            "2": 0.4544,
+            "3": 0.2914
+          },
+          "evidence_choice_probability": 0.2734,
+          "combined_utility": 0.5101,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "However, outright bans may be overly blunt. Social media also offers benefits: connection with peers, access to support communities, creative expression, and educational resources. Many teens use these platforms responsibly. A ban might simply push usage underground, making it harder for parents to monitor, and could disadvantage young people from developing digital literacy skills they'll need as adults.",
+          "start_char": 416,
+          "end_char": 824,
+          "relevance_score": 1.5729,
+          "relevance_normalized": 0.5243,
+          "relevance_confidence": 0.3102,
+          "level_probabilities": {
+            "0": 0.2608,
+            "1": 0.1641,
+            "2": 0.3166,
+            "3": 0.2585
+          },
+          "evidence_choice_probability": 0.2083,
+          "combined_utility": 0.4137,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A more nuanced approach might be better: stronger parental controls, age-appropriate platform design, digital literacy education, and enforcing existing age restrictions (currently 13 in many places) more effectively. The focus should be on safer use rather than complete prohibition.",
+          "start_char": 826,
+          "end_char": 1110,
+          "relevance_score": 1.6466,
+          "relevance_normalized": 0.5489,
+          "relevance_confidence": 0.3111,
+          "level_probabilities": {
+            "0": 0.2333,
+            "1": 0.1796,
+            "2": 0.2943,
+            "3": 0.2928
+          },
+          "evidence_choice_probability": 0.5183,
+          "combined_utility": 0.5382,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P1",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Acknowledges mental health risks while advocating stronger parental controls and age-appropriate design over prohibition.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A more nuanced approach might be better: stronger parental controls, age-appropriate platform design, digital literacy education, and enforcing existing age restrictions (currently 13 in many places) more effectively.",
+        "start_char": 826,
+        "end_char": 1043,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "llama-3-3-70b",
+      "display_name": "Llama 3.3 70B",
+      "short_name": "Llama",
+      "provider": "Meta",
+      "family": "llama",
+      "requested_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "actual_model_id": "us.meta.llama3-3-70b-instruct-v1:0",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "Banning social media for children under 16 is a complex issue. While it may protect them from online harm, it also limits their access to valuable resources and connections.\n\nSocial media can be both beneficial and harmful to children. It provides a platform for learning, self-expression, and socialization. However, it also exposes them to cyberbullying, inappropriate content, and potential mental health risks.\n\nA balanced approach, such as parental guidance and platform regulation, may be more effective than a blanket ban. This allows children to navigate the online world safely while still reaping its benefits.",
+      "generation_latency_ms": 1468.9,
+      "usage": {
+        "input_tokens": 69,
+        "output_tokens": 117,
+        "total_tokens": 186
+      },
+      "accent_color": "#2563EB",
+      "badge_bg": "#EFF6FF",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Design rules & parental controls",
+        "stance_short_label": "Mixed / Guardrails",
+        "stance_description": "Favors regulating addictive algorithmic feeds, default privacy, and parental consent tools over a hard statutory ban.",
+        "on_spectrum": true,
+        "spectrum_x": 43.5,
+        "pole_a_prob": 0.2365,
+        "mixed_prob": 0.6633,
+        "pole_b_prob": 0.1002
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_age_ban": 0.2365,
+          "mixed": 0.6633,
+          "supports_age_ban": 0.1002
+        },
+        "stance_confidence": 0.495,
+        "is_refusal": false,
+        "refusal_probability": 0.0831,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P2",
+          "P3"
+        ],
+        "pruned_passage_ids": [
+          "P1"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.7192,
+        "context_reduction_ratio": 0.2808,
+        "total_char_count": 616,
+        "selected_char_count": 443,
+        "decider_latency_ms": 4754.07,
+        "decider_usage": {
+          "input_tokens": 769,
+          "output_tokens": 6
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "Banning social media for children under 16 is a complex issue. While it may protect them from online harm, it also limits their access to valuable resources and connections.",
+          "start_char": 0,
+          "end_char": 173,
+          "relevance_score": 1.6661,
+          "relevance_normalized": 0.5554,
+          "relevance_confidence": 0.287,
+          "level_probabilities": {
+            "0": 0.2366,
+            "1": 0.186,
+            "2": 0.2521,
+            "3": 0.3253
+          },
+          "evidence_choice_probability": 0.0792,
+          "combined_utility": 0.3887,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "Social media can be both beneficial and harmful to children. It provides a platform for learning, self-expression, and socialization. However, it also exposes them to cyberbullying, inappropriate content, and potential mental health risks.",
+          "start_char": 175,
+          "end_char": 414,
+          "relevance_score": 1.8094,
+          "relevance_normalized": 0.6031,
+          "relevance_confidence": 0.3916,
+          "level_probabilities": {
+            "0": 0.1334,
+            "1": 0.2504,
+            "2": 0.2896,
+            "3": 0.3266
+          },
+          "evidence_choice_probability": 0.2068,
+          "combined_utility": 0.4644,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A balanced approach, such as parental guidance and platform regulation, may be more effective than a blanket ban. This allows children to navigate the online world safely while still reaping its benefits.",
+          "start_char": 416,
+          "end_char": 620,
+          "relevance_score": 1.8613,
+          "relevance_normalized": 0.6204,
+          "relevance_confidence": 0.3241,
+          "level_probabilities": {
+            "0": 0.1789,
+            "1": 0.1653,
+            "2": 0.2713,
+            "3": 0.3845
+          },
+          "evidence_choice_probability": 0.714,
+          "combined_utility": 0.6532,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        }
+      ],
+      "selected_passage_ids": [
+        "P2",
+        "P3"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Balances social media's learning benefits against harms, proposing parental guidance and platform regulation as alternatives to bans.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "A balanced approach, such as parental guidance and platform regulation, may be more effective than a blanket ban.",
+        "start_char": 416,
+        "end_char": 529,
+        "passage_id": "P3"
+      }
+    },
+    {
+      "slot_id": "deepseek-v3-2",
+      "display_name": "DeepSeek V3.2",
+      "short_name": "DeepSeek",
+      "provider": "DeepSeek",
+      "family": "deepseek",
+      "requested_model_id": "deepseek.v3.2",
+      "actual_model_id": "deepseek.v3.2",
+      "used_fallback": false,
+      "status": "available",
+      "error": null,
+      "original_response": "A complete ban on social media for under-16s is a well-intentioned but flawed solution. While the risks—such as cyberbullying, exposure to harmful content, and negative impacts on mental health and attention spans—are very real, an outright ban is impractical and overbroad. It would be difficult to enforce, punish responsible young users, and ignore the positive aspects of these platforms, including community building, creative expression, and access to information. Furthermore, it would stifle the development of digital literacy skills crucial for modern life.\n\nA more effective approach is robust regulation combined with parental guidance and platform accountability. Legislation should mandate the highest privacy settings by default, ban addictive algorithmic feeds for minors, and require age-verification technology. Simultaneously, we must educate children on navigating online spaces safely, just as we teach them to cross the street. The goal should be to create safer digital environments and build resilience, not to impose an unenforceable blanket prohibition that many children would circumvent.",
+      "generation_latency_ms": 2110.0,
+      "usage": {
+        "input_tokens": 38,
+        "output_tokens": 202,
+        "total_tokens": 240
+      },
+      "accent_color": "#0F766E",
+      "badge_bg": "#F0FDFA",
+      "placement": {
+        "bucket": "mixed",
+        "stance_key": "mixed",
+        "stance_label": "Design rules & parental controls",
+        "stance_short_label": "Mixed / Guardrails",
+        "stance_description": "Favors regulating addictive algorithmic feeds, default privacy, and parental consent tools over a hard statutory ban.",
+        "on_spectrum": true,
+        "spectrum_x": 36.0,
+        "pole_a_prob": 0.3544,
+        "mixed_prob": 0.6339,
+        "pole_b_prob": 0.0117
+      },
+      "decider": {
+        "assigned_stance": "mixed",
+        "raw_top_stance": "mixed",
+        "stance_probabilities": {
+          "opposes_age_ban": 0.3544,
+          "mixed": 0.6339,
+          "supports_age_ban": 0.0117
+        },
+        "stance_confidence": 0.4509,
+        "is_refusal": false,
+        "refusal_probability": 0.093,
+        "is_unclear": false,
+        "unclear_reason": null,
+        "selected_passage_ids": [
+          "P3",
+          "P4"
+        ],
+        "pruned_passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "primary_evidence_passage_id": "P3",
+        "context_compression_ratio": 0.4905,
+        "context_reduction_ratio": 0.5095,
+        "total_char_count": 1111,
+        "selected_char_count": 545,
+        "decider_latency_ms": 6037.67,
+        "decider_usage": {
+          "input_tokens": 972,
+          "output_tokens": 7
+        }
+      },
+      "passages": [
+        {
+          "id": "P1",
+          "number": 1,
+          "text": "A complete ban on social media for under-16s is a well-intentioned but flawed solution. While the risks—such as cyberbullying, exposure to harmful content, and negative impacts on mental health and attention spans—are very real, an outright ban is impractical and overbroad.",
+          "start_char": 0,
+          "end_char": 274,
+          "relevance_score": 1.95,
+          "relevance_normalized": 0.65,
+          "relevance_confidence": 0.3662,
+          "level_probabilities": {
+            "0": 0.1518,
+            "1": 0.1397,
+            "2": 0.3153,
+            "3": 0.3932
+          },
+          "evidence_choice_probability": 0.1673,
+          "combined_utility": 0.4811,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P2",
+          "number": 2,
+          "text": "It would be difficult to enforce, punish responsible young users, and ignore the positive aspects of these platforms, including community building, creative expression, and access to information. Furthermore, it would stifle the development of digital literacy skills crucial for modern life.",
+          "start_char": 275,
+          "end_char": 567,
+          "relevance_score": 1.8319,
+          "relevance_normalized": 0.6106,
+          "relevance_confidence": 0.3708,
+          "level_probabilities": {
+            "0": 0.1623,
+            "1": 0.174,
+            "2": 0.333,
+            "3": 0.3306
+          },
+          "evidence_choice_probability": 0.0559,
+          "combined_utility": 0.4165,
+          "selected_for_context": false,
+          "is_primary_evidence": false
+        },
+        {
+          "id": "P3",
+          "number": 3,
+          "text": "A more effective approach is robust regulation combined with parental guidance and platform accountability. Legislation should mandate the highest privacy settings by default, ban addictive algorithmic feeds for minors, and require age-verification technology. Simultaneously, we must educate children on navigating online spaces safely, just as we teach them to cross the street.",
+          "start_char": 569,
+          "end_char": 949,
+          "relevance_score": 1.9945,
+          "relevance_normalized": 0.6648,
+          "relevance_confidence": 0.3953,
+          "level_probabilities": {
+            "0": 0.135,
+            "1": 0.1302,
+            "2": 0.34,
+            "3": 0.3948
+          },
+          "evidence_choice_probability": 0.3941,
+          "combined_utility": 0.5701,
+          "selected_for_context": true,
+          "is_primary_evidence": true
+        },
+        {
+          "id": "P4",
+          "number": 4,
+          "text": "The goal should be to create safer digital environments and build resilience, not to impose an unenforceable blanket prohibition that many children would circumvent.",
+          "start_char": 950,
+          "end_char": 1115,
+          "relevance_score": 1.921,
+          "relevance_normalized": 0.6403,
+          "relevance_confidence": 0.3357,
+          "level_probabilities": {
+            "0": 0.1621,
+            "1": 0.1643,
+            "2": 0.2641,
+            "3": 0.4095
+          },
+          "evidence_choice_probability": 0.3827,
+          "combined_utility": 0.5501,
+          "selected_for_context": true,
+          "is_primary_evidence": false
+        }
+      ],
+      "selected_passage_ids": [
+        "P3",
+        "P4"
+      ],
+      "primary_evidence_passage_id": "P3",
+      "framing_explanation": "Prescribes concrete regulatory mechanisms (default privacy, algorithmic restrictions, age verification) paired with digital literacy to prevent circumvention.",
+      "featured_quote": {
+        "verified": true,
+        "source": "agent_exact_substring",
+        "quote": "Legislation should mandate the highest privacy settings by default, ban addictive algorithmic feeds for minors, and require age-verification technology.",
+        "start_char": 677,
+        "end_char": 829,
+        "passage_id": "P3"
+      }
+    }
+  ],
+  "provenance": {
+    "decider_model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "decider_service_url": "http://127.0.0.1:8099",
+    "pattern_tags": [
+      "#strands-decider-2b",
+      "#context-memory"
+    ],
+    "synthesis_agent_framework": "strands-agents",
+    "synthesis_model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "aws_region": "us-west-2",
+    "shared_prompt_template": "{question}\n\nProvide a direct, thoughtful answer in 2 to 3 short paragraphs (around 130-160 words).",
+    "shared_inference_settings": {
+      "temperature": 0.3,
+      "maxTokens": 260
+    },
+    "calibration_thresholds": {
+      "refusal_prob_threshold": 0.75,
+      "stance_confidence_threshold": 0.25,
+      "min_evidence_relevance_threshold": 1.45,
+      "mixed_margin_threshold": 0.12,
+      "passage_relevance_threshold": 1.5,
+      "max_selected_passages": 2,
+      "min_selected_passages": 1
+    },
+    "context_selection_stats": {
+      "total_chars_before": 2833,
+      "total_chars_after": 1686,
+      "overall_compression_ratio": 0.5951
+    },
+    "latency_ms": {
+      "bedrock_generation_parallel_ms": 6829.5,
+      "strands_decider_total_ms": 15903.1,
+      "strands_decider_wall_ms": 15909.8,
+      "strands_synthesis_agent_ms": 4054.5,
+      "total_pipeline_wall_ms": 26794.7
+    }
+  }
+}

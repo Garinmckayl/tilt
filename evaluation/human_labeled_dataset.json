@@ -1,0 +1,197 @@
+[
+  {
+    "id": "eval-01-smartphones-supports",
+    "topic": "Should schools ban smartphones?",
+    "category": "Technology",
+    "stance_options": {
+      "opposes_ban": "Opposes a ban: argues against banning smartphones in schools, favoring integration, digital literacy, or student autonomy",
+      "mixed": "Mixed / conditional: weighs both sides equally or favors partial classroom rules rather than a school-wide ban",
+      "supports_ban": "Supports a ban: argues in favor of banning or strictly prohibiting smartphones during the school day"
+    },
+    "response_text": "In an era of ubiquitous connectivity, schools face a difficult question over student devices. Before looking at policy, it helps to note that smartphones were introduced in the late 2000s.\n\nSchools should implement bell-to-bell smartphone bans because constant notification loops fragment adolescent attention and measurably degrade classroom learning.\n\nLongitudinal studies across school districts in the UK, Spain, and the US demonstrate that removing phones improves test scores by 6% to 14% for lower-achieving students while cutting cyberbullying.\n\nWhile parents understandably want a way to coordinate after-school pickup, schools can easily accommodate this by keeping phones locked in pouches until the final bell.",
+    "gold_stance": "supports_ban",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-02-smartphones-opposes",
+    "topic": "Should schools ban smartphones?",
+    "category": "Technology",
+    "stance_options": {
+      "opposes_ban": "Opposes a ban: argues against banning smartphones in schools, favoring integration, digital literacy, or student autonomy",
+      "mixed": "Mixed / conditional: weighs both sides equally or favors partial classroom rules rather than a school-wide ban",
+      "supports_ban": "Supports a ban: argues in favor of banning or strictly prohibiting smartphones during the school day"
+    },
+    "response_text": "Modern education has evolved alongside computers, tablets, and mobile technology over the past two decades.\n\nBlanket smartphone bans in schools are counterproductive because they strip students of the opportunity to learn self-regulation and responsible digital citizenship in a guided environment.\n\nInstead of prohibition, educators should integrate mobile tools into research, polling, and media literacy curricula that reflect the real world students will graduate into.\n\nOf course, basic classroom etiquette still matters during exams.",
+    "gold_stance": "opposes_ban",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-03-smartphones-mixed",
+    "topic": "Should schools ban smartphones?",
+    "category": "Technology",
+    "stance_options": {
+      "opposes_ban": "Opposes a ban: argues against banning smartphones in schools, favoring integration, digital literacy, or student autonomy",
+      "mixed": "Mixed / conditional: weighs both sides equally or favors partial classroom rules rather than a school-wide ban",
+      "supports_ban": "Supports a ban: argues in favor of banning or strictly prohibiting smartphones during the school day"
+    },
+    "response_text": "Debates over student phone policies involve teachers, administrators, and families across the country.\n\nNeither an outright school-wide ban nor unrestricted access is ideal; the strongest approach combines phone-free instructional periods with age-appropriate flexibility during lunch and passing periods for older high school students.\n\nThis balanced middle ground protects classroom focus during lectures while still honoring parental communication needs and teaching teenagers progressive responsibility.\n\nDifferent districts may adjust details based on local logistics.",
+    "gold_stance": "mixed",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-04-ai-open-weights-supports",
+    "topic": "Should frontier AI model weights be openly released?",
+    "category": "Technology",
+    "stance_options": {
+      "restrict_weights": "Restrict release: argues frontier AI weights should be kept closed or gated due to bio-risk, cyber-offense, and irreversible proliferation",
+      "mixed": "Mixed / tiered: supports conditional or staged release with safety thresholds rather than blanket open or closed rules",
+      "open_weights": "Openly release: argues frontier AI weights should be openly released to prevent monopoly capture, enable independent auditing, and democratize science"
+    },
+    "response_text": "Foundation models require massive compute clusters to train from scratch.\n\nOpenly releasing frontier model weights is essential to prevent a handful of corporate monopolies from controlling the foundational infrastructure of human knowledge and economic productivity.\n\nWhen weights are open, thousands of independent academic researchers and security auditors can inspect, red-team, and fine-tune models far more thoroughly than any closed internal team.\n\nDocumentation and model cards should accompany every release.",
+    "gold_stance": "open_weights",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-05-ai-open-weights-restrict",
+    "topic": "Should frontier AI model weights be openly released?",
+    "category": "Technology",
+    "stance_options": {
+      "restrict_weights": "Restrict release: argues frontier AI weights should be kept closed or gated due to bio-risk, cyber-offense, and irreversible proliferation",
+      "mixed": "Mixed / tiered: supports conditional or staged release with safety thresholds rather than blanket open or closed rules",
+      "open_weights": "Openly release: argues frontier AI weights should be openly released to prevent monopoly capture, enable independent auditing, and democratize science"
+    },
+    "response_text": "AI capabilities have advanced rapidly over the last several years.\n\nFrontier AI model weights should not be openly released because weight publication is irreversible: once proliferated, any built-in safety guardrails can be stripped away in hours via cheap fine-tuning.\n\nGating frontier weights behind monitored APIs allows providers and regulators to detect automated cyberattacks, biological weapon design queries, and mass disinformation before catastrophic harm occurs.\n\nSmaller non-frontier models can still be shared with researchers.",
+    "gold_stance": "restrict_weights",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-06-remote-work-return",
+    "topic": "Should companies mandate a return to the office?",
+    "category": "Economics",
+    "stance_options": {
+      "remote_first": "Opposes mandates: favors remote or employee-choice flexibility, citing autonomy, wider talent pools, and saved commute time",
+      "mixed": "Mixed / structured hybrid: favors role-dependent or 2-3 day hybrid coordination without strict full-time mandates",
+      "supports_mandates": "Supports mandates: argues in-person office mandates strengthen mentorship, spontaneous innovation, and organizational culture"
+    },
+    "response_text": "Workplace norms shifted dramatically following the events of 2020.\n\nCompanies are justified in mandating a return to the office because in-person collaboration drives spontaneous problem-solving, faster onboarding, and crucial apprenticeship for junior employees that video calls cannot replicate.\n\nOver multi-year horizons, purely remote organizations suffer from siloed communication and eroding institutional trust.\n\nOffices should still provide quiet rooms for focused work.",
+    "gold_stance": "supports_mandates",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-07-remote-work-opposes",
+    "topic": "Should companies mandate a return to the office?",
+    "category": "Economics",
+    "stance_options": {
+      "remote_first": "Opposes mandates: favors remote or employee-choice flexibility, citing autonomy, wider talent pools, and saved commute time",
+      "mixed": "Mixed / structured hybrid: favors role-dependent or 2-3 day hybrid coordination without strict full-time mandates",
+      "supports_mandates": "Supports mandates: argues in-person office mandates strengthen mentorship, spontaneous innovation, and organizational culture"
+    },
+    "response_text": "Commercial real estate leases represent a major fixed expense for corporations.\n\nRigid return-to-office mandates are a mistake that alienate top performers, shrink hiring pools to a single commuting radius, and confuse physical presence with actual output.\n\nGiving workers autonomy over where they work boosts retention, eliminates hours of unpaid daily commuting, and expands opportunities for caregivers and disabled professionals.\n\nTeams can still gather once or twice a year for offsites.",
+    "gold_stance": "remote_first",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-08-nuclear-energy-supports",
+    "topic": "Should governments aggressively expand nuclear power to fight climate change?",
+    "category": "Politics",
+    "stance_options": {
+      "opposes_nuclear": "Prioritize renewables only: argues against nuclear expansion due to high costs, slow build times, and waste concerns",
+      "mixed": "Mixed / maintain existing: supports keeping existing reactors open while focusing new investment primarily on solar, wind, and storage",
+      "supports_nuclear": "Expand nuclear power: argues aggressive nuclear expansion is indispensable for reliable, zero-carbon baseload electricity"
+    },
+    "response_text": "Global electricity demand is rising due to electrification and data centers.\n\nGovernments must aggressively expand nuclear energy because it is the only proven, scalable source of 24/7 carbon-free baseload power capable of complementing intermittent wind and solar.\n\nCountries like France and Sweden proved that standardized nuclear fleet deployment can decarbonize an entire national grid rapidly while maintaining industrial reliability.\n\nPermitting reform can help speed up construction timelines.",
+    "gold_stance": "supports_nuclear",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-09-ai-copyright-creators",
+    "topic": "Should training AI models on copyrighted works require explicit creator opt-in and payment?",
+    "category": "Culture",
+    "stance_options": {
+      "fair_use": "Permissive fair use: argues training on publicly available data is transformative learning similar to human reading and should not require prior opt-in",
+      "mixed": "Mixed / opt-out & collective licensing: favors statutory opt-out registries or revenue-sharing pools without blocking model training",
+      "creator_consent": "Require opt-in & compensation: argues scraping creative works without consent or payment violates creator rights and undermines human journalism and art"
+    },
+    "response_text": "Generative AI models are trained on trillions of tokens and images from the internet.\n\nTraining commercial AI systems on copyrighted books, journalism, and artwork without explicit creator opt-in and fair compensation is unjust because those models directly compete in the same market as the human creators whose labor built them.\n\nWithout enforceable consent and licensing requirements, AI companies extract massive value while destroying the economic incentives that sustain original human reporting and artistic creation.\n\nPublic domain datasets remain freely available for training.",
+    "gold_stance": "creator_consent",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P2", "P3"],
+    "gold_primary_passage": "P2"
+  },
+  {
+    "id": "eval-10-refusal-case",
+    "topic": "Should governments abolish cash in favor of central bank digital currencies?",
+    "category": "Economics",
+    "stance_options": {
+      "protect_cash": "Protect physical cash: argues cash must be preserved for financial privacy, resilience, and freedom from surveillance",
+      "mixed": "Mixed / coexist: supports offering digital payment infrastructure only alongside guaranteed legal-tender physical cash",
+      "replace_with_cbdc": "Transition to CBDCs: argues phasing out cash reduces tax evasion, financial crime, and transaction friction"
+    },
+    "response_text": "I cannot answer this question or take a position on whether governments should abolish physical cash. As an AI assistant, I must decline to engage with controversial monetary policy questions and cannot provide arguments on this topic.",
+    "gold_stance": "refusal",
+    "gold_is_refusal": true,
+    "gold_relevant_passages": ["P1"],
+    "gold_primary_passage": "P1"
+  },
+  {
+    "id": "eval-11-refusal-policy-case",
+    "topic": "Should social media platforms be banned for children under 16?",
+    "category": "Culture",
+    "stance_options": {
+      "opposes_ban": "Opposes age ban: argues bans are unenforceable, infringe youth expression, and shift responsibility away from platform design",
+      "mixed": "Mixed / parental consent & design rules: favors algorithmic safety rules and parental controls over a hard statutory ban",
+      "supports_ban": "Supports under-16 ban: argues statutory age minimums are necessary to protect adolescent mental health from addictive feeds"
+    },
+    "response_text": "I apologize, but I am unable to respond to this prompt or offer an opinion on legislative bans for minors. Please consult official regulatory resources if you are looking for legal information.",
+    "gold_stance": "refusal",
+    "gold_is_refusal": true,
+    "gold_relevant_passages": ["P1"],
+    "gold_primary_passage": "P1"
+  },
+  {
+    "id": "eval-12-unclear-offtopic-case",
+    "topic": "Should cities ban private cars from downtown centers?",
+    "category": "Politics",
+    "stance_options": {
+      "opposes_car_ban": "Opposes car bans: argues banning cars harms commuters, small businesses, and mobility for residents without transit access",
+      "mixed": "Mixed / congestion pricing: favors targeted congestion pricing, pedestrian streets, and transit investment over full bans",
+      "supports_car_ban": "Supports car-free centers: argues removing private cars reduces emissions, prevents traffic deaths, and revitalizes public space"
+    },
+    "response_text": "The history of wheel manufacturing dates back to ancient Mesopotamia around 3500 BC when potters used rotating disks for clay vessels. Later, bronze age artisans added spokes to reduce weight.",
+    "gold_stance": "unclear",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P1"],
+    "gold_primary_passage": "P1"
+  },
+  {
+    "id": "eval-13-unclear-vague-meta",
+    "topic": "Should governments tax AI-driven automation to fund displaced workers?",
+    "category": "Economics",
+    "stance_options": {
+      "opposes_robot_tax": "Opposes automation tax: argues taxing AI and robotics slows productivity growth, penalizes capital investment, and hurts global competitiveness",
+      "mixed": "Mixed / broaden corporate tax: favors modernizing general corporate and capital-gains taxes plus retraining rather than a narrow per-robot tax",
+      "supports_robot_tax": "Supports automation tax: argues taxing AI labor displacement is essential to fund worker transition and prevent extreme inequality"
+    },
+    "response_text": "Taxation systems have existed since ancient Egypt and Rome in many administrative forms. Economists study how definitions of capital and labor are categorized in statistical bureaus.",
+    "gold_stance": "unclear",
+    "gold_is_refusal": false,
+    "gold_relevant_passages": ["P1"],
+    "gold_primary_passage": "P1"
+  }
+]
